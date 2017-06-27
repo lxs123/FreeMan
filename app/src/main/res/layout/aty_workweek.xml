@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#FFF"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.searchjob.WorkweekAty">
+
+    <com.toocms.freeman.ui.view.MyGridView
+        android:id="@+id/my_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:numColumns="4"/>
+
+    <cn.zero.android.common.view.FButton
+        android:id="@+id/week_fbtn"
+        android:layout_width="match_parent"
+        android:layout_height="78px"
+        android:layout_marginLeft="63px"
+        android:layout_marginRight="63px"
+        android:layout_marginTop="182px"
+        android:text="确定"
+        android:textSize="32px"
+        android:textColor="#FFF"
+        app:buttonColor="@color/clr_main"
+        app:cornerRadius="5px"
+        app:shadowEnabled="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15px">
+
+        <View style="@style/weight"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="63px"
+            android:text="可以同时选择多个日期"
+            android:textColor="#F97A4E"/>
+    </LinearLayout>
+</LinearLayout>

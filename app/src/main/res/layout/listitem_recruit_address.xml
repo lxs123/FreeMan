@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/list_address_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15px"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/listitem_address_name"
+                    style="@style/style_default_text"
+                    android:layout_weight="1"
+                    android:text="范冰冰" />
+
+                <TextView
+                    android:id="@+id/listitem_address_phone"
+                    style="@style/style_default_text"
+                    android:layout_width="wrap_content"
+                    android:text="13888888888" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/listitem_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px"
+                android:text="河北区君临天下"
+                android:textColor="#656565"
+                android:textSize="26px" />
+
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/listitem_address_default"
+                style="@style/style_default_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/btn_addres_unselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:text="设为默认"
+                android:textSize="26px" />
+
+            <View style="@style/weight" />
+
+            <TextView
+                android:id="@+id/listitem_address_edit"
+                style="@style/style_default_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:drawableLeft="@drawable/btn_edit"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:text="编辑"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/listitem_address_delete"
+                style="@style/style_default_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:drawableLeft="@drawable/btn_delected"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:text="删除"
+                android:textSize="26px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

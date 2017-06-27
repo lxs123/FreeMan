@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/look_con_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical"
+    tools:context=".ui.searchjob.RecruitmentOrderAt">
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout_recruitment_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        app:tabIndicatorColor="@color/clr_main"
+        app:tabSelectedTextColor="@color/clr_main">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="招工信息详情"/>
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabitem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="资方信息详情"/>
+    </android.support.design.widget.TabLayout>
+
+</LinearLayout>

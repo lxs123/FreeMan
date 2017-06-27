@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?><!--我的钱包-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12px"
+        android:layout_marginRight="12px"
+        android:layout_marginTop="26px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/listitem_text"
+                android:layout_weight="1"
+                android:paddingLeft="15px"
+                android:paddingTop="20px"
+                android:text="我的余额"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/wallet_my_take"
+                style="@style/listitem_text"
+                android:paddingLeft="15px"
+                android:paddingRight="10px"
+                android:paddingTop="20px"
+                android:text="我的提现账户"
+                android:textColor="@color/clr_main"
+                android:textSize="30px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/balance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="41px"
+            android:layout_marginTop="50px"
+            android:text="￥860.00"
+            android:textColor="#1b59db"
+            android:textSize="60px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12px"
+        android:layout_marginRight="12px"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/wallet_t_record"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_marginRight="6px"
+            android:layout_weight="1"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:gravity="center"
+            android:text="交易明细"
+            android:textColor="#323232"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/wallet_extension"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:gravity="center"
+            android:text="推广奖励"
+            android:textColor="#323232"
+            android:textSize="28px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170px"
+        android:layout_marginLeft="12px"
+        android:layout_marginRight="12px"
+        android:layout_marginTop="24px"
+
+        android:background="@drawable/linlay_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:text="冻结资金："
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/disable_tv"
+                style="@style/listitem_text"
+                android:text="￥2500.00"
+                android:textColor="@color/clr_main"
+                android:textSize="28px" />
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <TextView
+            style="@style/listitem_text"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:gravity="center_vertical"
+            android:paddingLeft="25px"
+            android:text="您的收入中未到提现时限" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170px"
+        android:layout_marginLeft="12px"
+        android:layout_marginRight="12px"
+        android:layout_marginTop="24px"
+
+        android:background="@drawable/linlay_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:text="合同金额："
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/possible_tv"
+                style="@style/listitem_text"
+                android:text="￥2500.00"
+                android:textColor="@color/clr_main"
+                android:textSize="28px" />
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <TextView
+            style="@style/listitem_text"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:gravity="center_vertical"
+            android:paddingLeft="25px"
+            android:text="未完成结算的合同金额" />
+    </LinearLayout>
+
+    <View style="@style/weight" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <cn.zero.android.common.view.FButton
+            android:id="@+id/wallet_take"
+            style="@style/fbtn_release_style"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginBottom="20px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="20px"
+            android:text="提现" />
+    </LinearLayout>
+</LinearLayout>

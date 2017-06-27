@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?><!--提取现金-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+    <!--title-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/take_to_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="提现到银行卡"
+                android:textColor="@drawable/normal_black_check_blue"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="60px"
+                android:layout_gravity="center_vertical"
+                android:background="#cccccc" />
+
+            <TextView
+                android:id="@+id/take_to_wx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="提现到微信"
+                android:textColor="@drawable/normal_black_check_blue"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="60px"
+                android:layout_gravity="center_vertical"
+                android:background="#cccccc" />
+
+
+            <TextView
+                android:id="@+id/take_to_alipay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:gravity="center"
+                android:text="提现到支付宝"
+                android:textColor="@drawable/normal_black_check_blue"
+                android:textSize="30px" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/take_title_view"
+            android:layout_width="250px"
+            android:layout_height="5px"
+            android:layout_gravity="bottom"
+            android:background="@color/clr_main" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/listitem_text"
+                android:paddingTop="20px"
+                android:text="账户可用余额"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/take_can_money"
+                style="@style/listitem_text"
+                android:paddingLeft="20px"
+                android:paddingTop="20px"
+                android:text="￥2500.00"
+                android:textColor="@color/clr_main"
+                android:textSize="28px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:paddingTop="20px"
+                android:text="账户当前余额"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/take_all_money"
+                style="@style/listitem_text"
+                android:paddingLeft="20px"
+                android:paddingTop="20px"
+                android:text="￥5200.00"
+                android:textColor="@color/clr_main"
+                android:textSize="28px" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/take_bank_card_click"
+        android:layout_width="match_parent"
+        android:layout_height="132px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/take_sign"
+            style="@style/new_job_order_text"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:drawableRight="@color/white"
+            android:text="银行"
+            android:textSize="28px" />
+
+        <LinearLayout
+            android:id="@+id/take_bank_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/take_bank_card"
+                style="@style/new_job_order_text"
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:drawableRight="@color/white"
+                android:paddingBottom="0px"
+                android:paddingTop="0px"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/take_bank_card_type"
+                style="@style/new_job_order_text"
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:drawableRight="@color/white"
+                android:paddingBottom="0px"
+                android:paddingTop="20px"
+                android:textColor="#656565"
+                android:textSize="28px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/take_wx_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#323232"
+            android:textSize="28px" />
+
+        <View style="@style/weight" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:background="@drawable/btn_enter" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="20px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="10px">
+
+        <TextView
+            style="@style/listitem_text"
+            android:paddingTop="20px"
+            android:text="到账时间"
+            android:textSize="28px" />
+
+        <TextView
+            style="@style/listitem_text"
+            android:paddingLeft="65px"
+            android:paddingTop="20px"
+            android:text="预计两小时到账"
+            android:textColor="@color/clr_main"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="116px"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            style="@style/listitem_text"
+            android:paddingBottom="0px"
+            android:paddingRight="30px"
+            android:text="提现金额"
+            android:textSize="28px" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="60px"
+            android:background="#cccccc" />
+
+        <EditText
+            android:id="@+id/take_money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:hint="输入提现金额"
+            android:inputType="number"
+            android:maxLength="20"
+            android:paddingLeft="65px"
+            android:textColor="@color/clr_default_text"
+            android:textColorHint="#a0a0a0"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10px">
+
+        <View style="@style/weight" />
+
+        <TextView
+            style="@style/listitem_text"
+            android:text="请在这里输入不大于" />
+
+        <TextView
+            android:id="@+id/take_max_money"
+            style="@style/listitem_text"
+            android:text="2600.00"
+            android:textColor="@color/clr_main" />
+
+        <TextView
+            style="@style/listitem_text"
+            android:paddingRight="20px"
+            android:text="的数字" />
+    </LinearLayout>
+
+    <cn.zero.android.common.view.FButton
+        android:id="@+id/take"
+        style="@style/fbtn_release_style"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="128px"
+        android:text="提现" />
+</LinearLayout>

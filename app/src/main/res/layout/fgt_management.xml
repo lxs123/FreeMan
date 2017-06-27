@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical"
+    tools:context=".ui.searchjob.ManagementFgt">
+
+    <!-- TODO: Update blank fragment layout -->
+    <cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView
+        android:id="@+id/labour_detail_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:swipe_mode="pullDownFromTop" />
+
+    <View style="@style/divider" />
+
+    <LinearLayout
+        android:id="@+id/manage_fbtn_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:paddingBottom="20px"
+        android:paddingLeft="65px"
+        android:paddingRight="65px"
+        android:paddingTop="20px">
+
+
+        <cn.zero.android.common.view.FButton
+            android:id="@+id/new_jo_release"
+            android:layout_width="match_parent"
+            android:layout_height="85px"
+            android:text="接单"
+            android:textColor="@color/white"
+            android:textSize="32px"
+            app:buttonColor="@color/clr_main"
+            app:cornerRadius="10px"
+            app:shadowEnabled="false" />
+    </LinearLayout>
+
+
+</LinearLayout>

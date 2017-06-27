@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/my_contract_cap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="我是资方"
+                android:textColor="@drawable/normal_black_check_blue"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="60px"
+                android:layout_gravity="center_vertical"
+                android:background="#cccccc" />
+
+
+            <TextView
+                android:id="@+id/my_contract_lab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:gravity="center"
+                android:text="我是劳方"
+                android:textColor="@drawable/normal_black_check_blue"
+                android:textSize="30px" />
+
+        </LinearLayout>
+
+        <View style="@style/divider"
+            android:layout_gravity="bottom"/>
+
+        <View
+            android:id="@+id/take_title_view"
+            android:layout_width="375px"
+            android:layout_height="5px"
+            android:layout_gravity="bottom"
+            android:background="@color/clr_main" />
+    </FrameLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/header_my_contract_title"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/white"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/clr_main"
+        app:tabIndicatorHeight="0dp"
+        app:tabMinWidth="132px"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/clr_main" />
+
+
+</LinearLayout>

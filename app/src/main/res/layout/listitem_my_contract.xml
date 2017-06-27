@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/list_c_lastview"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/list_cont_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/listitem_text"
+                android:paddingLeft="16px"
+                android:text="合同编号：" />
+
+            <TextView
+                android:id="@+id/list_contract_id"
+                style="@style/listitem_text"
+                android:layout_weight="1"
+                android:text="1324566548" />
+
+            <TextView
+                android:id="@+id/list_cont_state"
+                style="@style/listitem_text"
+                android:layout_marginRight="40px"
+                android:text="待生效"
+                android:textColor="@color/clr_main"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18px"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px">
+
+                    <TextView
+                        style="@style/listitem_text"
+                        android:text="合同金额：" />
+
+                    <TextView
+                        android:id="@+id/list_cont_total"
+                        style="@style/listitem_text"
+                        android:text="￥1000.00"
+                        android:textColor="@color/clr_main" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/list_cont_settle_total_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/list_cont_settle_total_name"
+                        style="@style/listitem_text"
+                        android:text="结算金额：" />
+
+                    <TextView
+                        android:id="@+id/list_cont_settle_total"
+                        style="@style/listitem_text"
+                        android:text="￥1000.00"
+                        android:textColor="@color/clr_main" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/list_cont_tuibu_total_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/list_cont_tuibu_total_name"
+                        style="@style/listitem_text"
+                        android:text="退补款金额：" />
+
+                    <TextView
+                        android:id="@+id/list_cont_tuibu_total"
+                        style="@style/listitem_text"
+                        android:text="￥1000.00"
+                        android:textColor="@color/clr_main" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px">
+
+                    <TextView
+                        style="@style/listitem_text"
+                        android:text="合同开始时间：" />
+
+                    <TextView
+                        android:id="@+id/list_cont_start_date"
+                        style="@style/listitem_text"
+                        android:text="2016-11-24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px">
+
+                    <TextView
+                        style="@style/listitem_text"
+                        android:text="合同截止时间：" />
+
+                    <TextView
+                        android:id="@+id/list_cont_end_date"
+                        style="@style/listitem_text"
+                        android:text="2016-11-24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px">
+
+                    <TextView
+                        style="@style/listitem_text"
+                        android:text="结算方式：" />
+
+                    <TextView
+                        android:id="@+id/list_cont_payment"
+                        style="@style/listitem_text"
+                        android:text="完工即结" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/list_cont_status_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_release"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:text="工作内容：" />
+
+            <TextView
+                android:id="@+id/listcont_work"
+                style="@style/listitem_text"
+                android:singleLine="true"
+                android:text="房屋装修" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:text="单价：" />
+
+            <TextView
+                android:id="@+id/list_cont_price"
+                style="@style/listitem_text"
+                android:text="￥200/天"
+                android:textColor="@color/clr_main" />
+
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <LinearLayout
+            android:id="@+id/list_my_cont_noid_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="20px">
+
+                <cn.zero.android.common.view.shapeimageview.CircularImageView
+                    android:id="@+id/list_cont_head"
+                    android:layout_width="140px"
+                    android:layout_height="140px"
+                    android:layout_marginBottom="15px"
+                    android:layout_marginTop="15px"
+                    android:src="@drawable/icon_head" />
+
+                <TextView
+                    android:id="@+id/list_cont_authentication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="18px"
+                    android:text="已认证"
+                    android:textColor="#f6703c" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20px">
+
+                            <TextView
+                                style="@style/listitem_text"
+                                android:paddingTop="33px"
+                                android:text="会员编号：" />
+
+                            <TextView
+                                android:id="@+id/list_cont_member_id"
+                                style="@style/listitem_text"
+                                android:drawablePadding="10px"
+                                android:drawableRight="@drawable/icon_labor"
+                                android:paddingBottom="0px"
+                                android:paddingLeft="21px"
+                                android:paddingTop="33px"
+                                android:text="109232541" />
+
+                            <ImageView
+                                android:id="@+id/list_cont_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20px"
+                                android:paddingRight="40px"
+                                android:paddingTop="33px"
+                                android:src="@drawable/btn_phone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20px">
+
+                            <TextView
+                                style="@style/listitem_text"
+                                android:text="昵称：" />
+
+                            <TextView
+                                android:id="@+id/list_cont_nickname"
+                                style="@style/listitem_text"
+                                android:paddingLeft="21px"
+                                android:text="jingle" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20px">
+
+                            <TextView
+                                style="@style/listitem_text"
+                                android:text="信用等级：" />
+
+                            <ImageView
+                                android:id="@+id/list_cont_credit_rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5px"
+                                android:src="@drawable/icon_5star" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/list_cont_agree_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_contract_agree"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <LinearLayout
+            android:id="@+id/list_btn_content"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View style="@style/weight" />
+
+            <Button
+                android:id="@+id/list_look_info"
+                style="@style/btn_save_style"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="22px"
+                android:paddingLeft="15px"
+                android:paddingRight="15px"
+                android:text="查看修改明细" />
+
+            <Button
+                android:id="@+id/list_contract_relieve"
+                style="@style/btn_save_style"
+                android:layout_marginRight="22px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:text="解除合同" />
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/list_contract_pay"
+                style="@style/fbtn_release_style"
+                android:layout_width="wrap_content"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:text="继续签约" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

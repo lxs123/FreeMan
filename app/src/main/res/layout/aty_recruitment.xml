@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?><!--招工-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <cn.zero.android.common.view.banner.ConvenientBanner
+        android:id="@+id/recruitment_img"
+        android:layout_width="match_parent"
+        android:layout_height="374px"
+        app:canLoop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/recruitment_new_job"
+                style="@style/index_text"
+                android:layout_width="412px"
+                android:layout_height="242px"
+                android:background="#ef83c3"
+                android:drawableLeft="@drawable/icon_new"
+                android:drawablePadding="35px"
+                android:gravity="center_vertical"
+                android:paddingLeft="40px"
+                android:paddingTop="0px"
+                android:text="新建招工单" />
+
+            <TextView
+                android:id="@+id/recruitment_my_job"
+                android:layout_width="412px"
+                android:layout_height="240px"
+                android:layout_marginTop="20px"
+                android:background="#f0a078"
+                android:drawableLeft="@drawable/icon_recruit"
+                android:drawablePadding="21px"
+                android:gravity="center_vertical"
+                android:paddingLeft="40px"
+                android:text="我的招工单"
+                android:textColor="@color/white"
+                android:textSize="34px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/recruitment_help"
+            style="@style/index_text"
+            android:layout_width="255px"
+            android:layout_height="500px"
+            android:layout_marginLeft="22px"
+            android:background="#a97ce6"
+            android:drawablePadding="75px"
+            android:drawableTop="@drawable/icon_rehelp"
+            android:paddingTop="110px"
+            android:text="招工帮助" />
+
+    </LinearLayout>
+
+</LinearLayout>

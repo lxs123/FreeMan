@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/range_area_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/range_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/btn_select"
+                android:drawablePadding="15px"
+                android:paddingBottom="25px"
+                android:paddingLeft="28px"
+                android:paddingRight="28px"
+                android:paddingTop="25px"
+                android:text="选定区域"
+                android:textColor="#323232"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/range_area_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="15px"
+                android:drawableRight="@drawable/btn_enter"
+                android:maxWidth="280px"
+                android:paddingRight="30px"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#323232"
+                android:textSize="30px" />
+        </LinearLayout>
+
+
+        <View
+            style="@style/divider"
+            android:paddingLeft="28px"
+            android:paddingRight="28px" />
+
+        <LinearLayout
+            android:id="@+id/range_distance_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/range_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/btn_unselect"
+                android:drawablePadding="15px"
+                android:paddingBottom="25px"
+                android:paddingLeft="28px"
+                android:paddingRight="28px"
+                android:paddingTop="25px"
+                android:text="选定距离"
+                android:textColor="#323232"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/range_distance_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="15px"
+                android:drawableRight="@drawable/btn_enter"
+                android:maxWidth="280px"
+                android:paddingRight="30px"
+                android:singleLine="true"
+                android:textColor="#323232"
+                android:textSize="30px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/range_distance_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFCFAED"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56px"
+                android:layout_marginTop="30px"
+                >
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="80px"-->
+                    <!--android:layout_marginLeft="41px"-->
+                    <!--android:layout_marginRight="42px"-->
+                    <!--android:layout_marginTop="30px"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:paddingBottom="26px"-->
+                    <!--android:paddingLeft="17px"-->
+                    <!--android:paddingRight="24px"-->
+                    <!--android:paddingTop="26px"-->
+                    <!--android:src="@drawable/a_4" />-->
+
+
+
+                <View
+                    android:layout_width="10px"
+                    android:layout_height="10px"
+                    android:background="@drawable/spot_normal"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="62px"/>
+                <View
+                    android:id="@+id/sel_spot_right"
+                    android:layout_width="10px"
+                    android:layout_height="10px"
+                    android:background="@drawable/spot_normal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="65px"
+                    />
+                <SeekBar
+                    android:id="@+id/range_seek"
+                    android:layout_width="match_parent"
+                    android:layout_height="35px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:progressDrawable="@drawable/seek_bg"
+                    android:focusable="true"
+                    android:thumb="@drawable/seek_spot_bg"
+                    android:layout_centerVertical="true"
+                    />
+                <!--android:progressTint="#FFF27CBE"-->
+                <View
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:background="@drawable/seek_spot_bg"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="62px"/>
+
+                <View
+                    android:id="@+id/range_seek_cen_spot"
+                    android:layout_width="10px"
+                    android:layout_height="10px"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/seek_spot_bg"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50px"
+                android:paddingRight="50px">
+
+                <TextView
+                    android:id="@+id/range_seek1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0Km"
+                    android:textColor="#FFF27CBE"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/range_seek2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="5Km"
+                    android:textColor="#999999"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/range_seek3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40px"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="10Km"
+                    android:textColor="#999999"
+                    android:textSize="26px" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View style="@style/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="#FFF"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <cn.zero.android.common.view.FButton
+            android:id="@+id/range_sure"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="65px"
+            android:layout_marginRight="65px"
+            android:layout_marginTop="10px"
+            android:text="确定"
+            android:textColor="#FFF"
+            android:textSize="32px"
+            app:buttonColor="#467CD4"
+            app:cornerRadius="10px"
+            app:shadowEnabled="false" />
+    </LinearLayout>
+</LinearLayout>

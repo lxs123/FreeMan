@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical"
+    tools:context=".ui.searchjob.WorkTimeAty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/work_start_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="32px"
+                android:paddingLeft="30px"
+                android:paddingTop="32px"
+                android:text="合同开始日期"
+                android:textColor="#5B5B5B"
+                android:textSize="28px" />
+
+            <View style="@style/weight" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="18px"
+                android:drawableRight="@drawable/btn_enter"
+                android:paddingBottom="32px"
+                android:paddingRight="20px"
+                android:paddingTop="32px"
+                android:text=""
+                android:textColor="#5B5B5B"
+                android:textSize="28px" />
+        </LinearLayout>
+
+        <View style="@style/divid" />
+
+        <LinearLayout
+            android:id="@+id/work_end_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="32px"
+                android:paddingLeft="30px"
+                android:paddingTop="32px"
+                android:text="合同截止日期"
+                android:textColor="#5B5B5B"
+                android:textSize="28px" />
+
+            <View style="@style/weight" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="18px"
+                android:drawableRight="@drawable/btn_enter"
+                android:paddingBottom="32px"
+                android:paddingRight="20px"
+                android:paddingTop="32px"
+                android:text=""
+                android:textColor="#5B5B5B"
+                android:textSize="28px" />
+        </LinearLayout>
+
+        <View style="@style/divid" />
+
+        <LinearLayout
+            android:id="@+id/work_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="32px"
+                android:paddingLeft="30px"
+                android:paddingTop="32px"
+                android:text="每天工作开始时间"
+                android:textColor="#5B5B5B"
+                android:textSize="28px" />
+
+            <View style="@style/weight" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="18px"
+                android:drawableRight="@drawable/btn_enter"
+                android:paddingBottom="32px"
+                android:paddingRight="20px"
+                android:paddingTop="32px"
+                android:text=""
+                android:textColor="#5B5B5B"
+                android:textSize="28px" />
+        </LinearLayout>
+
+        <View style="@style/divid" />
+
+        <LinearLayout
+            android:id="@+id/work_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="32px"
+                android:paddingLeft="30px"
+                android:paddingTop="32px"
+                android:text="每天工作截止时间"
+                android:textColor="#5B5B5B"
+                android:textSize="28px" />
+
+            <View style="@style/weight" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="18px"
+                android:drawableRight="@drawable/btn_enter"
+                android:paddingBottom="32px"
+                android:paddingRight="20px"
+                android:paddingTop="32px"
+                android:text=""
+                android:textColor="#5B5B5B"
+                android:textSize="28px" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

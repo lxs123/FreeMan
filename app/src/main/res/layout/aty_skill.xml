@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical"
+    tools:context="com.toocms.freeman.ui.index.SkillAty">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12px"
+        android:background="#FCFBCC"
+        android:gravity="center"
+        android:padding="20px"
+        android:text="可以同时选择多个技能"
+        android:textColor="#FF9D4E"
+        android:textSize="26px"/>
+
+    <cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView
+        android:id="@+id/skill_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:swipe_mode="disabled"/>
+</LinearLayout>

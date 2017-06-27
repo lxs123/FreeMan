@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/message_lay">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="20px"
+        android:paddingLeft="35px"
+        android:paddingTop="20px">
+
+        <TextView
+            android:id="@+id/message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="【资方已与您签约】"
+            android:textColor="#4c4c4c"
+            android:textSize="30px" />
+
+        <View style="@style/weight" />
+
+
+        <TextView
+            android:id="@+id/message_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="38px"
+            android:paddingTop="4px"
+            android:text="15小时前"
+            android:textColor="#656565"
+            android:textSize="26px" />
+
+        <View
+            android:id="@+id/message_spot"
+            android:layout_width="15px"
+            android:layout_height="15px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="29px"
+            android:background="@drawable/index_message_bg" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/message_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingBottom="50px"
+        android:paddingLeft="35px"
+        android:paddingRight="35px"
+        android:text="资方jingle在他最近发布的招工选中了您"
+        android:textColor="#656565"
+        android:textSize="28px" />
+
+
+</LinearLayout>

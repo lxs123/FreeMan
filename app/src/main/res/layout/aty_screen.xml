@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.searchjob.ScreenAty">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/new_jo_week_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableRight="@color/white"
+                    android:text="工作周历" />
+
+                <TextView
+                    android:id="@+id/screen_week"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:background="@null"
+                    android:maxWidth="260px"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:id="@+id/new_jo_week_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:background="#FFFCFAED"
+                android:orientation="vertical">
+
+                <com.toocms.freeman.ui.view.MyGridView
+                    android:id="@+id/new_jo_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numColumns="4"
+                    android:paddingBottom="30px"
+                    android:paddingTop="30px" />
+
+                <cn.zero.android.common.view.FButton
+                    android:id="@+id/screen_week_sure"
+                    android:layout_width="260px"
+                    android:layout_height="70px"
+                    android:layout_gravity="center_horizontal"
+                    android:text="确定"
+                    android:textColor="@color/white"
+                    android:textSize="34px"
+                    app:buttonColor="#FFEA8668"
+                    app:cornerRadius="10px"
+                    app:shadowEnabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="30px"
+                    android:paddingTop="15px"
+                    android:text="可以同时选择多个日期"
+                    android:textColor="#FFEF905E"
+                    android:textSize="26px" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <View
+                        style="@style/divid"
+                        android:layout_marginTop="20px" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/select_job_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableRight="@color/white"
+                    android:text="工作" />
+
+                <TextView
+                    android:id="@+id/tvWork"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:background="@null"
+                    android:maxWidth="260px"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:orientation="vertical"
+                android:paddingBottom="20px">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20px"
+                    android:paddingLeft="30px"
+                    android:paddingTop="30px"
+                    android:text="单价区间"
+                    android:textColor="#323232"
+                    android:textSize="32px" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21px"
+                    android:background="@color/clr_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="10px">
+
+                    <EditText
+                        android:id="@+id/screen_min_price"
+                        android:layout_width="225px"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_screen_edittext"
+                        android:gravity="center"
+                        android:hint="最低价"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:paddingBottom="10px"
+                        android:paddingLeft="30px"
+                        android:paddingRight="30px"
+                        android:paddingTop="10px"
+                        android:singleLine="true"
+                        android:textColor="#999999"
+                        android:textSize="28px" />
+
+                    <LinearLayout
+                        android:layout_width="22px"
+                        android:layout_height="6px"
+                        android:layout_marginLeft="16px"
+                        android:layout_marginRight="16px"
+                        android:background="#999999" />
+
+
+                    <EditText
+                        android:id="@+id/screen_max_price"
+                        android:layout_width="225px"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_screen_edittext"
+                        android:gravity="center"
+                        android:hint="最高价"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:paddingBottom="10px"
+                        android:paddingLeft="30px"
+                        android:paddingRight="30px"
+                        android:paddingTop="10px"
+                        android:singleLine="true"
+                        android:textColor="#999999"
+                        android:textSize="28px" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="30px"
+                    android:text="关键词："
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/screen_keywords"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="提示：多个关键词可以空格隔开"
+                    android:maxLines="1"
+                    android:paddingLeft="10px"
+                    android:paddingRight="30px"
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="30px"
+                    android:paddingLeft="30px"
+                    android:paddingTop="30px"
+                    android:text="会员编号："
+                    android:textColor="#323232"
+                    android:textSize="32px" />
+
+                <EditText
+                    android:id="@+id/screen_account_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="21px"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:paddingBottom="30px"
+                    android:paddingLeft="10px"
+                    android:paddingTop="30px"
+                    android:singleLine="true"
+                    android:textColor="#323232"
+                    android:textSize="32px" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="30px"
+                    android:paddingLeft="30px"
+                    android:paddingTop="30px"
+                    android:text="招工单号："
+                    android:textColor="#323232"
+                    android:textSize="32px" />
+
+                <EditText
+                    android:id="@+id/screen_recr_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="21px"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:paddingBottom="30px"
+                    android:paddingLeft="10px"
+                    android:paddingTop="30px"
+                    android:singleLine="true"
+                    android:textColor="#323232"
+                    android:textSize="32px" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:id="@+id/select_range_tv_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    style="@style/screen_item_style"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableRight="@color/white"
+                    android:text="选定范围" />
+
+                <TextView
+                    android:id="@+id/select_range_tv"
+                    style="@style/screen_item_style"
+                    android:layout_width="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="15px"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <include layout="@layout/include_data_content" />
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/sure_fbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="65px"
+                android:layout_marginRight="65px"
+                android:layout_marginTop="80px"
+                android:text="开始查询"
+                android:textColor="#FFF"
+                android:textSize="32px"
+                app:buttonColor="@color/clr_main"
+                app:cornerRadius="10px"
+                app:shadowEnabled="false" />
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/screen_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50px"
+                android:layout_marginLeft="65px"
+                android:layout_marginRight="65px"
+                android:layout_marginTop="20px"
+                android:text="清空搜索条件"
+                android:textColor="#FFF"
+                android:textSize="32px"
+                app:buttonColor="#CCCCCC"
+                app:cornerRadius="10px"
+                app:shadowEnabled="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

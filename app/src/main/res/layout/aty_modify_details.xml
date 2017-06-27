@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/clr_bg"
+              android:orientation="vertical"
+              tools:context="com.toocms.freeman.ui.index.ModifyDetailsAty">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/modify_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        app:tabIndicatorColor="#467CD4"
+        app:tabIndicatorHeight="6px"
+        app:tabSelectedTextColor="#467CD4"
+        app:tabTextColor="#656565">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabitem1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="原招工信息"/>
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabitem2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="对方修改"/>
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabitem3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的修改"/>
+    </android.support.design.widget.TabLayout>
+
+    <ScrollView
+        android:id="@+id/modify_det_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/other_modify_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FCFBCC"
+                android:orientation="vertical"
+                android:paddingBottom="20px"
+                android:paddingTop="20px"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="25px"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="“"
+                        android:textColor="#FF9D4E"/>
+
+                    <View
+                        android:layout_width="15px"
+                        android:layout_height="15px"
+                        android:background="@drawable/shape_circular"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="”表示上方未达成一致的内容"
+                        android:textColor="#FF9D4E"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="蓝色字体表示作出修改的内容"
+                    android:textColor="#FF9D4E"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/prompt_tv"
+                style="@style/prompt"
+                android:text="蓝色字体表示作出修改的内容"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/fgt_look_worker_edit"/>
+
+
+</LinearLayout>

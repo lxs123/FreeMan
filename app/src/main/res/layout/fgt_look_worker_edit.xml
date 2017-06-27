@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/look_work_edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/l_w_e_spot_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FCFBCC"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="25px"
+                android:paddingTop="20px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="“"
+                    android:textColor="#FF9D4E" />
+
+                <View
+                    android:layout_width="15px"
+                    android:layout_height="15px"
+                    android:background="@drawable/shape_circular" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="”表示上方未达成一致的内容"
+                    android:textColor="#FF9D4E" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/l_w_e_blue_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FCFBCC"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20px"
+                android:paddingTop="10px"
+                android:text="蓝色字体表示作出修改的内容"
+                android:textColor="#FF9D4E" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100px"
+                android:layout_marginTop="20px"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="工作" />
+
+                        <View style="@style/weight" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_work"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:maxWidth="160px"
+                                android:paddingBottom="30px"
+                                android:paddingRight="5px"
+                                android:paddingTop="30px"
+                                android:text="技能，出租车司机"
+                                android:textColor="#323232"
+                                android:textSize="30px" />
+
+                            <View
+                                android:id="@+id/l_w_e_work_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_work"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="27px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:id="@+id/l_w_e_person_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="招工人数" />
+
+                        <View style="@style/weight" />
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_person"
+                                style="@style/modify_details_item_tv"
+                                android:paddingRight="8px"
+                                android:text="1" />
+
+                            <View
+                                android:id="@+id/l_w_e_person_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_person"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="29px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View android:id="@+id/l_w_e_person_divid"
+                        style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="合同开始日期" />
+
+                        <View style="@style/weight" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_start_date"
+                                style="@style/modify_details_item_tv"
+                                android:paddingRight="7px"
+                                android:text="2016-11-26" />
+
+                            <View
+                                android:id="@+id/l_w_e_start_date_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_start_date"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="29px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="合同截止日期" />
+
+                        <View style="@style/weight" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_end_date"
+                                style="@style/modify_details_item_tv"
+                                android:paddingRight="7px"
+                                android:text="2016-12-21" />
+
+                            <View
+                                android:id="@+id/l_w_e_end_date_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_end_date"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="29px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="每天工作开始日期" />
+
+                        <View style="@style/weight" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_start_time"
+                                style="@style/modify_details_item_tv"
+                                android:paddingRight="7px"
+                                android:text="9：00" />
+
+                            <View
+                                android:id="@+id/l_w_e_start_time_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_start_time"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="29px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="每天工作开始时间" />
+
+                        <View style="@style/weight" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_end_time"
+                                style="@style/modify_details_item_tv"
+                                android:paddingRight="7px"
+                                android:text="18：00" />
+
+                            <View
+                                android:id="@+id/l_w_e_end_time_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_end_time"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="29px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:layout_weight="1"
+                            android:text="工作时间周历" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_week"
+                                style="@style/modify_details_item_tv"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:maxWidth="200px"
+                                android:paddingRight="7px"
+                                android:text="周历,周一" />
+
+                            <View
+                                android:id="@+id/l_w_e_week_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_week"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="27px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/l_w_e_deadline_content_divid"
+                        style="@style/divid" />
+
+                    <LinearLayout
+                        android:id="@+id/l_w_e_deadline_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="招工截止日期" />
+
+                        <View style="@style/weight" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_deadline"
+                                style="@style/modify_details_item_tv"
+                                android:paddingRight="7px"
+                                android:text="18：00" />
+
+                            <View
+                                android:id="@+id/l_w_e_deadline_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_deadline"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="29px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="单价" />
+
+                        <View style="@style/weight" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_price"
+                                style="@style/modify_details_item_tv"
+                                android:paddingRight="7px"
+                                android:text="￥500.00/天" />
+
+                            <View
+                                android:id="@+id/l_w_e_price_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_price"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="27px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            android:id="@+id/l_w_e_total_text"
+                            style="@style/modify_details_item_tv"
+                            android:text="合同金额" />
+
+                        <View style="@style/weight" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_total"
+                                style="@style/modify_details_item_tv"
+                                android:paddingRight="7px"
+                                android:text="￥2500.00" />
+
+                            <View
+                                android:id="@+id/l_w_e_total_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_total"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="27px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="结算方式" />
+
+                        <View style="@style/weight" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_payment"
+                                style="@style/modify_details_item_tv"
+                                android:paddingRight="7px"
+                                android:text="完工即结" />
+
+                            <View
+                                android:id="@+id/l_w_e_payment_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_payment"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="27px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:id="@+id/l_w_e_address_click"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="工作地点" />
+
+                        <View style="@style/weight" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_address"
+                                style="@style/modify_details_item_tv"
+                                android:layout_width="230px"
+                                android:drawableRight="@drawable/btn_navigation"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:paddingRight="7px"
+                                android:text="天津市西青区进京路2号" />
+
+                            <View
+                                android:id="@+id/l_w_e_address_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_address"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="27px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/l_w_e_address_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingRight="30px"
+                    android:paddingTop="10px"
+                    android:text="注：点击工作地点一栏可进入导航页对地点进行导航"
+                    android:textColor="#f68465"
+                    android:textSize="24px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="是否资方提供工作期间的保险" />
+
+                        <View style="@style/weight" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_insurance"
+                                style="@style/modify_details_item_tv"
+                                android:paddingRight="7px"
+                                android:text="是" />
+
+                            <View
+                                android:id="@+id/l_w_e_insurance_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_insurance"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="27px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="是否资方提供工作期间的工作餐" />
+
+                        <View style="@style/weight" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_lunch"
+                                style="@style/modify_details_item_tv"
+                                android:paddingRight="7px"
+                                android:text="否" />
+
+                            <View
+                                android:id="@+id/l_w_e_lunch_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_lunch"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="27px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="是否资方提供工作期间的住宿" />
+
+                        <View style="@style/weight" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_live"
+                                style="@style/modify_details_item_tv"
+                                android:paddingRight="7px"
+                                android:text="否" />
+
+                            <View
+                                android:id="@+id/l_w_e_live_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_live"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="27px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="是否资方提供工作期间的劳动工具" />
+
+                        <View style="@style/weight" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_utils"
+                                style="@style/modify_details_item_tv"
+                                android:paddingRight="7px"
+                                android:text="是" />
+
+                            <View
+                                android:id="@+id/l_w_e_utils_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_utils"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="27px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="是否资方承担因工作产生的交通费" />
+
+                        <View style="@style/weight" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_transportation"
+                                style="@style/modify_details_item_tv"
+                                android:paddingRight="7px"
+                                android:text="是" />
+
+                            <View
+                                android:id="@+id/l_w_e_transportation_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_transportation"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="27px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="是否资方承担因工作产生的通讯费" />
+
+                        <View style="@style/weight" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/l_w_e_communications"
+                                style="@style/modify_details_item_tv"
+                                android:paddingRight="7px"
+                                android:text="是" />
+
+                            <View
+                                android:id="@+id/l_w_e_communications_spot"
+                                android:layout_width="15px"
+                                android:layout_height="15px"
+                                android:layout_alignRight="@id/l_w_e_communications"
+                                android:layout_marginBottom="30px"
+                                android:layout_marginTop="27px"
+                                android:background="@drawable/index_message_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:background="#FFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:paddingTop="30px"
+                        android:text="工作完成标准"
+                        android:textColor="#323232"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/l_w_e_audit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20px"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginRight="30px"
+                        android:layout_marginTop="12px"
+                        android:background="@drawable/text_bg"
+                        android:paddingBottom="26px"
+                        android:paddingLeft="15px"
+                        android:paddingRight="15px"
+                        android:paddingTop="26px"
+                        android:text="请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好"
+                        android:textColor="#656565"
+                        android:textSize="26px" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:background="#FFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:paddingTop="30px"
+                        android:text="备注"
+                        android:textColor="#323232"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/l_w_e_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20px"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginRight="30px"
+                        android:layout_marginTop="12px"
+                        android:background="@drawable/text_bg"
+                        android:paddingBottom="26px"
+                        android:paddingLeft="15px"
+                        android:paddingRight="15px"
+                        android:paddingTop="26px"
+                        android:text="请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好"
+                        android:textColor="#656565"
+                        android:textSize="26px" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#FFF"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingBottom="20px"-->
+            <!--android:paddingTop="20px"-->
+            <!--android:visibility="gone">-->
+
+            <!--<View style="@style/weight" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/l_w_e_old_cont"-->
+            <!--style="@style/btn_save_style"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_marginRight="20px"-->
+            <!--android:paddingLeft="15px"-->
+            <!--android:paddingRight="15px"-->
+            <!--android:text="执行原合同" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/l_w_e_edit_cont"-->
+            <!--style="@style/btn_save_style"-->
+            <!--android:layout_marginRight="20px"-->
+            <!--android:text="修改合同" />-->
+
+            <!--<cn.zero.android.common.view.FButton-->
+            <!--android:id="@+id/l_w_e_agree_cont"-->
+            <!--style="@style/fbtn_release_style"-->
+            <!--android:text="同意" />-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/l_w_e_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="暂无相关数据"
+            android:textColor="#323232"
+            android:textSize="34px"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+    <View style="@style/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+
+        android:orientation="horizontal"
+        android:paddingBottom="20px"
+        android:paddingTop="20px">
+
+        <View style="@style/weight" />
+
+        <Button
+            android:id="@+id/l_w_e_old_contract"
+            style="@style/btn_save_style"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="20px"
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:text="执行原合同" />
+
+        <Button
+            android:id="@+id/l_w_e_edit_contract"
+            style="@style/btn_save_style"
+            android:layout_marginRight="20px"
+            android:text="修改合同" />
+
+        <cn.zero.android.common.view.FButton
+            android:id="@+id/l_w_e_agree_contract"
+            style="@style/fbtn_release_style"
+            android:text="同意" />
+    </LinearLayout>
+
+</LinearLayout>

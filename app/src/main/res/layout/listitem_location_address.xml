@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/location_imgv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30px"
+            android:src="@drawable/icon_address" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20px">
+
+            <TextView
+                android:id="@+id/searching_address_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10px"
+                android:paddingTop="20px"
+                android:text="junlin天下"
+                android:textColor="@color/clr_default_text"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/searching_address_tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:paddingRight="30px"
+                android:text="博爱道20号"
+                android:textColor="@color/clr_default_sub_text"
+                android:textSize="26px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

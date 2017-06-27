@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/list_skill_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2px"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="30px"
+        android:paddingLeft="30px"
+        android:paddingRight="20px"
+        android:paddingTop="30px">
+
+        <TextView
+            android:id="@+id/skill_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="技工"
+            android:textColor="#5B5B5B"
+            android:textSize="30px" />
+
+        <View style="@style/weight" />
+
+        <TextView
+            android:id="@+id/skill_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="15px"
+            android:drawableRight="@drawable/btn_enter"
+            android:maxWidth="260px"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#5B5B5B"
+            android:textSize="30px" />
+
+
+    </LinearLayout>
+
+    <View android:id="@+id/list_skill_divid"
+        style="@style/divider" />
+
+    <cn.zero.android.common.view.linearlistview.LinearListView
+        android:id="@+id/list_skill_second_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+
+</LinearLayout>

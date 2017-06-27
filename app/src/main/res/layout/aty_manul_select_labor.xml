@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/new_jo_week_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30px"
+                    android:paddingLeft="26px"
+                    android:paddingRight="32px"
+                    android:paddingTop="30px"
+                    android:text="工作时间周历"
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/manul_week_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5px"
+                    android:drawableRight="@drawable/btn_enter"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:maxWidth="280px"
+                    android:paddingBottom="30px"
+                    android:paddingRight="32px"
+                    android:paddingTop="30px"
+                    android:text=""
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/new_jo_week_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:background="#FFFCFAED"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.toocms.freeman.ui.view.MyGridView
+                    android:id="@+id/new_jo_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numColumns="4"
+                    android:paddingBottom="30px"
+                    android:paddingTop="30px" />
+
+                <cn.zero.android.common.view.FButton
+                    android:id="@+id/manul_sure"
+                    android:layout_width="260px"
+                    android:layout_height="70px"
+                    android:layout_gravity="center_horizontal"
+                    android:text="确定"
+                    android:textColor="@color/white"
+                    android:textSize="34px"
+                    app:buttonColor="#FFEA8668"
+                    app:cornerRadius="10px"
+                    app:shadowEnabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="30px"
+                    android:paddingTop="15px"
+                    android:text="可以同时选择多个日期"
+                    android:textColor="#FFEF905E"
+                    android:textSize="26px" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="26px"
+                android:paddingRight="26px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="30px"
+                    android:paddingRight="25px"
+                    android:paddingTop="30px"
+                    android:text="单价区间："
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/manul_min_price"
+                    android:layout_width="225px"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_price_manul_select_labor"
+                    android:gravity="center"
+                    android:hint="最低价"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px"
+                    android:paddingTop="10px"
+                    android:singleLine="true"
+                    android:textColor="#999999"
+                    android:textSize="28px" />
+
+                <LinearLayout
+                    android:layout_width="22px"
+                    android:layout_height="6px"
+                    android:layout_marginLeft="16px"
+                    android:layout_marginRight="16px"
+                    android:background="#999999" />
+
+
+                <EditText
+                    android:id="@+id/manul_max_price"
+                    android:layout_width="225px"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_price_manul_select_labor"
+                    android:gravity="center"
+                    android:hint="最高价"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px"
+                    android:paddingTop="10px"
+                    android:singleLine="true"
+                    android:textColor="#999999"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="30px"
+                    android:paddingLeft="26px"
+                    android:paddingRight="25px"
+                    android:paddingTop="30px"
+                    android:text="会员编号："
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/manul_member"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:paddingBottom="30px"
+                    android:paddingLeft="15px"
+                    android:paddingRight="15px"
+                    android:paddingTop="30px"
+                    android:singleLine="true"
+                    android:textColor="@color/clr_default_text"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:id="@+id/manul_skill_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30px"
+                    android:paddingLeft="26px"
+                    android:paddingRight="32px"
+                    android:paddingTop="30px"
+                    android:text="技能"
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/manul_skill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5px"
+                    android:drawableRight="@drawable/btn_enter"
+                    android:paddingBottom="30px"
+                    android:paddingRight="32px"
+                    android:paddingTop="30px"
+                    android:text=""
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:id="@+id/manul_area_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/selected_range_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30px"
+                    android:paddingLeft="26px"
+                    android:paddingRight="32px"
+                    android:paddingTop="30px"
+                    android:text="选定范围"
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/manul_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5px"
+                    android:drawableRight="@drawable/btn_enter"
+                    android:paddingBottom="30px"
+                    android:paddingRight="32px"
+                    android:paddingTop="30px"
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <include layout="@layout/include_data_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#D9D9D9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF">
+
+        <cn.zero.android.common.view.FButton
+            android:id="@+id/query_fbtn"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="65px"
+            android:layout_marginRight="65px"
+            android:layout_marginTop="10px"
+            android:text="查询"
+            android:textColor="#FFF"
+            android:textSize="32px"
+            app:buttonColor="@color/clr_main"
+            app:cornerRadius="10px"
+            app:shadowEnabled="false" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?><!--结算-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/settlement_title"
+        style="@style/new_job_order_text"
+        android:layout_marginTop="20px"
+        android:drawableLeft="@drawable/icon_refunds"
+        android:drawableRight="@color/white"
+        android:text="结算金额确认" />
+
+    <View style="@style/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/settlement_name"
+            style="@style/new_job_order_text"
+            android:layout_width="wrap_content"
+            android:drawableRight="@color/white"
+            android:paddingRight="20px"
+            android:text="结算金额:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="#323232"
+            android:textSize="30px" />
+
+
+        <EditText
+            android:id="@+id/settlement_money"
+            android:layout_width="520px"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:inputType="numberDecimal"
+            android:maxLength="13"
+            android:text="2500.00"
+            android:textColor="#323232"
+            android:textSize="30px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/settlement_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20px"
+        android:paddingTop="12px"
+        android:text="注：结算金额默认为合同金额"
+        android:textColor="#f56c21"
+        android:textSize="24px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20px"
+            android:paddingTop="12px"
+            android:text="a：正数--资方应付的金额"
+            android:textColor="#f56c21"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20px"
+            android:paddingTop="12px"
+            android:text="b：负数--劳方应付的金额"
+            android:textColor="#f56c21"
+            android:textSize="24px" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20px"
+        android:paddingTop="12px"
+        android:text="c：0/空--表示互不支付"
+        android:textColor="#f56c21"
+        android:textSize="24px" />
+
+    <View style="@style/weight" />
+
+    <View style="@style/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="20px"
+        android:paddingRight="20px">
+
+        <cn.zero.android.common.view.FButton
+            android:id="@+id/make_sure_pay_fbtn"
+            style="@style/fbtn_release_style"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_margin="20px"
+            android:text="确认结算" />
+
+    </LinearLayout>
+</LinearLayout>

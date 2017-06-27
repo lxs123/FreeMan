@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical"
+    tools:context=".ui.mine.baseinformation.IDcardAuthenticationAty">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:paddingBottom="30px"
+                android:paddingLeft="30px"
+                android:paddingTop="30px"
+                android:text="上传身份证照"
+                android:textColor="#4D4D4D"
+                android:textSize="28px" />
+
+            <TextView
+                style="@style/prompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="提供身份证正反面照片(照片看清身份证内容)，需本人身份证正反面拍照（照片清晰看清身份证内容）"
+                android:textColor="#FB4848" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="16px"
+                    android:paddingTop="23px"
+                    android:text="参考图片"
+                    android:textColor="#4D4D4D" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="16px"
+                    android:paddingTop="23px"
+                    android:text="你的图片"
+                    android:textColor="#4D4D4D" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="313px"
+                    android:layout_height="313px"
+                    android:src="@drawable/d_photo_one" />
+
+                <ImageView
+                    android:id="@+id/hand_id_img"
+                    android:layout_width="313px"
+                    android:layout_height="313px"
+                    android:layout_marginLeft="30px"
+                    android:src="@drawable/d_photo_two" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="25px">
+
+                <ImageView
+                    android:layout_width="313px"
+                    android:layout_height="313px"
+                    android:src="@drawable/d_photo_three" />
+
+                <ImageView
+                    android:id="@+id/positive_id_img"
+                    android:layout_width="313px"
+                    android:layout_height="313px"
+                    android:layout_marginLeft="30px"
+                    android:src="@drawable/d_photo_four" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="25px">
+
+                <ImageView
+                    android:layout_width="313px"
+                    android:layout_height="313px"
+                    android:src="@drawable/d_photo_five" />
+
+                <ImageView
+                    android:id="@+id/negative_id_img"
+                    android:layout_width="313px"
+                    android:layout_height="313px"
+                    android:layout_marginLeft="30px"
+                    android:src="@drawable/d_photo_six" />
+            </LinearLayout>
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/id_card_auth_sure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100px"
+                android:layout_marginLeft="62px"
+                android:layout_marginRight="62px"
+                android:layout_marginTop="40px"
+                android:text="提交"
+                android:textColor="#FFF"
+                android:textSize="34px"
+                app:buttonColor="@color/clr_main"
+                app:cornerRadius="10px"
+                app:shadowEnabled="false" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

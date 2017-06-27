@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.toocms.freeman">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+    <!-- Required -->
+    <permission
+        android:name="com.toocms.freeman.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="com.toocms.freeman.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 百度API所需权限 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
+    <application
+        android:name=".ui.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.CustomActionBar">
+
+        <!-- 设计图尺寸 -->
+        <meta-data
+            android:name="design_width"
+            android:value="750" />
+        <meta-data
+            android:name="design_height"
+            android:value="1334" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="7LdceMFMTsh5O71G1Gns5zfE0bTksYRM" />
+
+        <activity android:name=".ui.loading.AdvertAty">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.index.IndexAty" />
+        <activity android:name=".ui.loading.GuideAty" />
+        <activity android:name=".ui.index.CollectAty" />
+        <activity
+            android:name=".ui.index.ManulSelectLaborAty"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 首页消息页 -->
+        <activity android:name=".ui.index.IndexMessageAty" />
+        <!-- 消息详情页 -->
+        <activity android:name=".ui.index.MessageDetailAty" />
+        <!-- 招工页 -->
+        <activity android:name=".ui.recruitment.RecruitmentAty" />
+        <activity android:name=".ui.recruitment.joborder.NewJobOrderAty" />
+        <!-- 招工地址 -->
+        <activity android:name=".ui.recruitment.RecruitAddressAty" />
+        <!-- 新建招工订单 - 工作页 -->
+        <!-- 创建时间分区 -->
+        <activity android:name=".ui.recruitment.joborder.CreateTimeAty" />
+        <activity android:name=".ui.recruitment.joborder.ContractTimeAty" />
+        <!-- 手动选择技能1 -->
+        <activity android:name=".ui.index.SkillAty" />
+        <!-- 手动选择技能2 -->
+        <activity android:name=".ui.index.SkillSecondAty" />
+        <!-- 手动选择技能3 -->
+        <activity android:name=".ui.index.SkillThirdDetailAty" />
+        <activity android:name=".ui.recruitment.joborder.ReleaseJOAty" />
+        <!-- 查看反馈页——修改明细 -->
+        <activity android:name=".ui.index.ModifyDetailsAty" />
+        <!-- 修改招工信息 -->
+        <activity android:name=".ui.index.ModifyRecruitmentInformationAty" />
+        <activity android:name=".ui.index.LabourDetailAty" />
+        <activity
+            android:name=".ui.index.SelectedRangeAty"
+            android:label="选定范围" />
+        <activity android:name=".ui.index.EvaluateInformationAty" />
+        <activity android:name=".ui.index.BaseInfomationAty" />
+        <activity android:name=".ui.index.SkillInformationAty" />
+        <!-- 我的找工单——查看反馈 -->
+        <activity android:name=".ui.index.ViewFeedbackAty" />
+        <!-- 招工单详情页 -->
+        <activity android:name=".ui.recruitment.myjoborder.JODetailAty" />
+        <!-- 招工单 — 单位  — 重量 -->
+        <activity android:name=".ui.recruitment.joborder.JOUWeightAty" />
+        <!-- 招工单 — 单位 -->
+        <activity android:name=".ui.recruitment.joborder.JobOrderUnitAty" />
+        <!-- 招工帮助 -->
+        <activity android:name=".ui.recruitment.jobhelp.JOHelpAty" />
+        <!-- 招工帮助详情 -->
+        <activity android:name=".ui.recruitment.jobhelp.JOHelpDetailAty" />
+        <activity android:name=".ui.recruitment.myjoborder.MyJobOrderAty" />
+        <activity android:name=".ui.index.LabourListAty" />
+        <!-- 搜工作 -->
+        <activity android:name=".ui.searchjob.SearchJobAty" />
+        <!-- 招工信息查询结果 -->
+        <activity android:name=".ui.searchjob.RecruitmentQueryResultAty" />
+        <activity android:name=".ui.contract.MyContractAty" />
+        <activity
+            android:name=".ui.searchjob.ScreenAty"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ui.searchjob.ProvinceAty" />
+        <activity android:name=".ui.searchjob.RecruitmentOrderAt" />
+        <activity android:name=".ui.searchjob.TransactionRecordAty" />
+        <activity android:name=".ui.searchjob.AlreadyRobJobOrderAty" />
+        <activity android:name=".ui.searchjob.MyJobOrderInSearchAty" />
+        <activity
+            android:name=".ui.contract.EvaluateAty"
+            android:label="发表评价" />
+        <activity
+            android:name=".ui.pay.wallet.MyWalletAty"
+            android:label="我的钱包" />
+        <activity
+            android:name=".ui.pay.wallet.ExtensionAty"
+            android:label="推广奖励" />
+        <activity
+            android:name=".ui.pay.wallet.TransactionDetailAty"
+            android:label="交易明细" />
+        <!-- 筛选日期页 -->
+        <activity
+            android:name=".ui.pay.wallet.ScreenDayAty"
+            android:label="筛选" />
+        <activity
+            android:name=".ui.pay.wallet.TakeMoneyAty"
+            android:label="提现" />
+        <!-- 已抢招工单——详情——招工信息 -->
+        <activity android:name=".ui.searchjob.AlreadyRobJobOrderDetailAty" />
+        <activity
+            android:name=".ui.contract.ComplaintAty"
+            android:label="投诉" />
+        <activity android:name=".ui.searchjob.MyJobOrderDetailAty" />
+        <activity android:name=".ui.searchjob.WorkweekAty" />
+        <activity android:name=".ui.searchjob.WorkTimeAty" />
+        <activity
+            android:name=".ui.pay.wallet.SelBankCardAty"
+            android:label="选择银行卡" />
+        <activity
+            android:name=".ui.pay.wallet.AddBankAty"
+            android:label="添加银行卡" />
+        <activity
+            android:name=".ui.contract.editcontract.look.LookContractInfo"
+            android:label="查看修改明细" />
+        <activity
+            android:name=".ui.contract.editcontract.EditContractAty"
+            android:label="修改合同" />
+        <activity
+            android:name=".ui.pay.PayAty"
+            android:label="收银台" />
+        <activity
+            android:name=".ui.pay.SettlementAty"
+            android:label="确认结算金额" />
+        <activity
+            android:name=".ui.pay.wallet.MyTakeAccountAty"
+            android:label="我的提现账号" />
+        <activity android:name=".ui.mine.baseinformation.BaseInformationIndexAty" />
+        <activity android:name=".ui.mine.baseinformation.IDcardAuthenticationAty" />
+        <activity android:name=".ui.mine.baseinformation.BusinessLicenseCertificationAty" />
+        <activity android:name=".ui.mine.baseinformation.OtherCertificatesAty" />
+        <activity android:name=".ui.mine.accountsecurity.AccountSecurityAty" />
+        <activity android:name=".ui.mine.accountsecurity.ChangePhoneNumberAty" />
+        <activity android:name=".ui.mine.accountsecurity.ChangePhoneNumberSureAty" />
+        <activity android:name=".ui.mine.accountsecurity.SecurityVerificationAty" />
+        <activity android:name=".ui.mine.accountsecurity.SetSecurityPasswordAty" />
+        <activity android:name=".ui.mine.accountsecurity.DeleteAccountAty" />
+        <activity android:name=".ui.mine.accountsecurity.SubmitIDCardPhotoAty" />
+        <activity
+            android:name=".ui.mine.settings.SettingsAty"
+            android:label="设置" />
+        <activity
+            android:name=".ui.recruitment.AddAddressAty"
+            android:label="添加地址" />
+        <activity
+            android:name=".ui.mine.settings.FeedbackAty"
+            android:label="意见反馈" />
+        <activity
+            android:name=".ui.contract.ContDetailAty"
+            android:label="合同详情" />
+        <activity
+            android:name=".ui.lar.LoginAty"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.lar.RegisterAty"
+            android:label="注册" />
+        <activity
+            android:name=".ui.lar.RegisterPswAty"
+            android:label="注册" />
+        <activity
+            android:name=".ui.lar.ForgetPswAty"
+            android:label="忘记密码" />
+        <activity
+            android:name=".ui.lar.SetPswAty"
+            android:label="设置新密码" />
+        <!-- 地址搜索 - 搜索地图页 -->
+        <activity android:name=".ui.recruitment.LocationAddressAty" />
+        <activity android:name=".ui.recruitment.myjoborder.SearchingAddressAty" />
+        <activity android:name=".ui.mine.baseinformation.WorkAreaAty" />
+        <activity
+            android:name=".ui.mine.baseinformation.CityListAty"
+            android:label="省" />
+        <!-- 省市区三级列表 -->
+        <activity
+            android:name=".ui.recruitment.AreaListAty"
+            android:label="省" />
+        <activity android:name=".ui.mine.MyCollectAty" />
+        <activity
+            android:name=".ui.mine.MemberDetailAty"
+            android:label="会员详情" />
+        <activity android:name=".ui.mine.settings.AboutAty" />
+        <activity android:name=".ui.view.PhotoZoomAty" />
+        <activity
+            android:name=".ui.mine.MyExtensionAty"
+            android:label="我的推广码" />
+        <activity android:name=".ui.index.WebViewAty" />
+        <activity
+            android:name=".ui.contract.RelieveContAty"
+            android:label="解除合同" />
+        <activity android:name=".ui.pay.DisagreePayAty" />
+        <activity android:name=".ui.mine.MyEvaluateAty" />
+        <activity android:name=".ui.searchjob.AtyMap" />
+        <activity android:name=".ui.util.NavigationAty" />
+        <activity android:name=".ui.util.BNDemoGuideActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.view.ImagePagerActivity" />
+        <activity
+            android:name=".ui.view.UpPhotoAty"
+            android:label="上传照片" />
+        <activity
+            android:name=".ui.recruitment.OtherEvaluationAty"
+            android:label="评价信息" />
+        <!-- 选择图片 -->
+        <activity
+            android:name="cn.zero.android.common.view.ucrop.UCropActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name="com.toocms.frame.ui.imageselector.SelectImageAty" />
+        <activity android:name=".ui.mine.MineAty" />
+        <activity android:name=".ui.mine.baseinformation.SkillInformationInBaseAty" />
+        <activity android:name=".ui.mine.baseinformation.AddWorkAreaAty" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity android:name=".ui.infomationaty.NewBaseInfoAty"></activity>
+        <!--极光推送 ↓-->
+        <!-- Rich push 核心功能 since 2.0.6-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle"></activity>
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.toocms.freeman" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:exported="false"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.toocms.freeman" />
+            </intent-filter>
+
+        </service>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.toocms.freeman" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name=".ui.util.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.toocms.freeman" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="d59adeea14f3bc1e20e7b827" /> <!--  </>值来自开发者平台取得的AppKey-->
+    </application>
+
+</manifest>

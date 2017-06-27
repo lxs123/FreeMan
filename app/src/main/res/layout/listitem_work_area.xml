@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/list_work_area_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23px"
+        android:background="#FFF"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/list_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="25px"
+            android:gravity="center_vertical"
+            android:paddingBottom="32px"
+            android:paddingLeft="38px"
+            android:paddingTop="32px"
+            android:text="河北省，石家庄市，西青区"
+            android:textColor="#656565"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/list_area_del"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:drawableLeft="@drawable/btn_delected"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:paddingRight="25px"
+            android:text="删除"
+            android:textColor="#323232"
+            android:textSize="26px" />
+    </LinearLayout>
+</LinearLayout>

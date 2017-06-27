@@ -1,0 +1,672 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    tools:context=".ui.searchjob.RecruitmentInformationFgt">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:orientation="vertical">
+
+            <View style="@style/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="30px"
+                    android:paddingLeft="30px"
+                    android:paddingTop="30px"
+                    android:text="已接单人数："
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/accept_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="30px"
+                    android:paddingLeft="20px"
+                    android:paddingTop="30px"
+                    android:text=""
+                    android:textColor="#FB4A4A"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_marginBottom="20px" />
+
+            <TextView
+                android:id="@+id/hire_noid_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:paddingBottom="30px"
+                android:paddingLeft="30px"
+                android:paddingTop="30px"
+                android:text="招工单号：12356789098"
+                android:textColor="#323232"
+                android:textSize="30px" />
+
+            <View style="@style/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="30px"
+                android:paddingLeft="22px"
+                android:paddingRight="10px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="20px"
+                        android:paddingTop="22px"
+                        android:text="工作现场图片"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <TextView
+                        android:id="@+id/jo_detail_imgs_text"
+                        style="@style/new_job_order_text"
+                        android:layout_width="wrap_content"
+                        android:drawableRight="@color/white"
+                        android:paddingLeft="0dp"
+                        android:text="未上传"
+                        android:textColor="#999999"
+                        android:textSize="24px"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <com.toocms.freeman.ui.view.MyGridView
+                    android:id="@+id/new_job_order_imgs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10px"
+                    android:numColumns="4"
+                    android:verticalSpacing="30px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100px"
+                android:layout_marginTop="20px"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/recruit_info_skill_click"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:layout_height="match_parent"
+                            android:text="工作" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/skill_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:maxWidth="160px"
+                            android:paddingBottom="30px"
+                            android:paddingTop="30px"
+                            android:text=""
+                            android:textColor="#323232"
+                            android:textSize="30px" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="招人数量" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/staff_tv"
+                            style="@style/modify_details_item_tv"
+                            android:text="1" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="合同开始日期" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/contract_starttime_tv"
+                            style="@style/modify_details_item_tv"
+                            android:text="2016-11-26" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="合同截止日期" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/contract_endtime_tv"
+                            style="@style/modify_details_item_tv"
+                            android:text="2016-12-26" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="每天工作开始时间" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/work_starttime_tv"
+                            style="@style/modify_details_item_tv"
+                            android:text="9：00" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="每天工作结束时间" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/work_endtime_tv"
+                            style="@style/modify_details_item_tv"
+                            android:text="18：00" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#FFF"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingLeft="26px"-->
+                    <!--android:paddingRight="26px">-->
+
+                    <!--<TextView-->
+                    <!--style="@style/modify_details_item_tv"-->
+                    <!--android:text="工作时间周历" />-->
+
+                    <!--</LinearLayout>-->
+                    <LinearLayout
+                        android:id="@+id/recruit_info_week_click"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="工作时间周历"
+                            android:layout_height="match_parent"/>
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/work_week_tv"
+                            style="@style/modify_details_item_tv"
+                            android:text="18：00" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="招工截止日期" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/hire_endtime_tv"
+                            style="@style/modify_details_item_tv"
+                            android:text="2016.10.15" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="单价" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/subtotal_tv"
+                            style="@style/modify_details_item_tv"
+                            android:text="￥500.00/天" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="金额" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/amount_tv"
+                            style="@style/modify_details_item_tv"
+                            android:text="￥2500.00" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="结算方式" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/settle_type_tv"
+                            style="@style/modify_details_item_tv"
+                            android:text="完工即结" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="工作地点" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/ress_tv"
+                            style="@style/modify_details_item_tv"
+                            android:layout_width="298px"
+                            android:drawableRight="@drawable/btn_navigation"
+                            android:text="天津市西青区进路阳光小区2栋" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="是否资方提供工作期间的保险" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/is_insurance_tv"
+                            style="@style/modify_details_item_tv"
+                            android:text="是" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="是否资方提供工作期间的工作餐" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/is_dine_tv"
+                            style="@style/modify_details_item_tv"
+                            android:text="否" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="是否资方提供工作期间的住宿" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/is_lodging_tv"
+                            style="@style/modify_details_item_tv"
+                            android:text="否" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="是否资方提供工作期间的劳动工具" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/is_tool_tv"
+                            style="@style/modify_details_item_tv"
+                            android:text="是" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="是否资方承担因工作产生的交通费" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/is_transportation_expenses_tv"
+                            style="@style/modify_details_item_tv"
+                            android:text="是" />
+                    </LinearLayout>
+
+                    <View style="@style/divid" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="horizontal"
+                        android:paddingLeft="26px"
+                        android:paddingRight="26px">
+
+                        <TextView
+                            style="@style/modify_details_item_tv"
+                            android:text="是否资方承担因工作产生的通讯费" />
+
+                        <View style="@style/weight" />
+
+                        <TextView
+                            android:id="@+id/is_correspondence_tv"
+                            style="@style/modify_details_item_tv"
+                            android:text="是" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:background="#FFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:paddingTop="30px"
+                        android:text="工作完成标准"
+                        android:textColor="#323232"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/audit_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20px"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginRight="30px"
+                        android:layout_marginTop="12px"
+                        android:background="@drawable/text_bg"
+                        android:paddingBottom="26px"
+                        android:paddingLeft="15px"
+                        android:paddingRight="15px"
+                        android:paddingTop="26px"
+                        android:text="请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好"
+                        android:textColor="#656565"
+                        android:textSize="26px" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:background="#FFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:paddingTop="30px"
+                        android:text="备注"
+                        android:textColor="#323232"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/others_text_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20px"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginRight="30px"
+                        android:layout_marginTop="12px"
+                        android:background="@drawable/text_bg"
+                        android:paddingBottom="26px"
+                        android:paddingLeft="15px"
+                        android:paddingRight="15px"
+                        android:paddingTop="26px"
+                        android:text="请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好"
+                        android:textColor="#656565"
+                        android:textSize="26px" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:orientation="horizontal"
+                android:paddingBottom="20px"
+                android:paddingTop="20px">
+
+                <View style="@style/weight" />
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65px"
+                    android:background="@drawable/btn_save"
+                    android:paddingLeft="15px"
+                    android:paddingRight="15px"
+                    android:text="修改"
+                    android:textColor="#467CD4"
+                    android:textSize="32px"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="160px"
+                    android:layout_height="65px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:background="@drawable/btn_save"
+                    android:text="修改"
+                    android:textColor="#467CD4"
+                    android:textSize="32px" />
+
+                <cn.zero.android.common.view.FButton
+                    android:id="@+id/btn3"
+                    android:layout_width="160px"
+                    android:layout_height="65px"
+                    android:layout_marginRight="16px"
+                    android:text="接单"
+                    android:textColor="#FFF"
+                    android:textSize="32px"
+                    app:buttonColor="@color/clr_main"
+                    app:cornerRadius="8px"
+                    app:shadowEnabled="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?><!--评价-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/new_job_order_text"
+                android:layout_width="wrap_content"
+                android:drawableRight="@color/white"
+                android:paddingRight="20px"
+                android:text="合同编号:" />
+
+            <TextView
+                android:id="@+id/evaluate_noid"
+                style="@style/new_job_order_text"
+                android:layout_width="wrap_content"
+                android:drawableRight="@color/white"
+                android:paddingLeft="0px"
+                android:text="532458" />
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="32px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:paddingBottom="5px"
+                android:paddingTop="15px"
+                android:text="合同金额：" />
+
+            <TextView
+                android:id="@+id/evaluate_total"
+                style="@style/listitem_text"
+                android:paddingTop="15px"
+                android:text="￥2500.00"
+                android:textColor="@color/clr_main" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="32px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:text="结算金额：" />
+
+            <TextView
+                android:id="@+id/evaluate_settlement"
+                style="@style/listitem_text"
+                android:text="￥2500.00"
+                android:textColor="@color/clr_main" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="32px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:text="合同开始时间：" />
+
+            <TextView
+                android:id="@+id/evaluate_start_date"
+                style="@style/listitem_text"
+                android:text="2016.01.02" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="32px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:text="合同截止时间：" />
+
+            <TextView
+                android:id="@+id/evaluate_end_date"
+                style="@style/listitem_text"
+                android:text="2017.07.21" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="32px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:text="结算方式：" />
+
+            <TextView
+                android:id="@+id/evaluate_payment"
+                style="@style/listitem_text"
+                android:text="完工即结" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="32px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:text="工作内容：" />
+
+            <TextView
+                android:id="@+id/evaluate_work"
+                style="@style/listitem_text"
+                android:text="家政 装修" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="15px"
+            android:paddingLeft="32px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:text="单价：" />
+
+            <TextView
+                style="@style/listitem_text"
+                android:text="￥" />
+
+            <TextView
+                android:id="@+id/evaluate_price"
+                style="@style/listitem_text"
+                android:text="200.00"
+                android:textColor="@color/clr_main" />
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="33px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:paddingTop="15px"
+                android:text="信用评价" />
+
+            <TextView
+                android:id="@+id/evaluate_high"
+                style="@style/listitem_text"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/evaluate_high"
+                android:drawablePadding="@dimen/dim_default_drawablepadding"
+                android:gravity="center_vertical"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:paddingTop="15px"
+                android:text="好评"
+                android:textColor="@drawable/evaluate_high" />
+
+            <TextView
+                android:id="@+id/evaluate_medium"
+                style="@style/listitem_text"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/evaluate_medium"
+                android:drawablePadding="@dimen/dim_default_drawablepadding"
+                android:gravity="center_vertical"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:paddingTop="15px"
+                android:text="中评"
+                android:textColor="@drawable/evaluate_medium" />
+
+            <TextView
+                android:id="@+id/evaluate_low"
+                style="@style/listitem_text"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/evaluate_low"
+                android:drawablePadding="@dimen/dim_default_drawablepadding"
+                android:gravity="center_vertical"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:paddingTop="15px"
+                android:text="差评"
+                android:textColor="@drawable/evaluate_low" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:background="@color/white"
+            android:paddingBottom="20px"
+            android:paddingLeft="32px"
+            android:paddingRight="32px"
+            android:paddingTop="20px">
+
+            <EditText
+                android:id="@+id/evaluate_other"
+                android:layout_width="match_parent"
+                android:layout_height="168px"
+                android:background="@drawable/text_bg"
+                android:gravity="left"
+                android:hint="请在这里输入您要评价的内容(1-150字)"
+                android:paddingBottom="20px"
+                android:paddingLeft="18px"
+                android:paddingRight="18px"
+                android:paddingTop="20px"
+                android:textColor="#656565"
+                android:textSize="26px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/new_jo_img_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="20px"
+            android:paddingLeft="22px"
+            android:paddingRight="10px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20px"
+                android:paddingTop="22px"
+                android:text="上传图片"
+                android:textColor="#323232"
+                android:textSize="26px" />
+
+            <com.toocms.freeman.ui.view.MyGridView
+                android:id="@+id/complaint_imgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="10px"
+                android:numColumns="4"
+                android:verticalSpacing="30px" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

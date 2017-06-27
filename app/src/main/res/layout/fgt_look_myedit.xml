@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="暂无相关数据"
+        android:textColor="#323232"
+        android:textSize="34px"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/clr_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="100px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/prompt_tv"
+                        style="@style/prompt"
+                        android:text="蓝色字体表示作出修改的内容" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="工作" />
+
+                            <View style="@style/weight" />
+
+                            <TextView
+                                android:layout_width="160px"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:paddingBottom="30px"
+                                android:paddingTop="30px"
+                                android:text="房屋装修 家政 厕所维修"
+                                android:textColor="#323232"
+                                android:textSize="30px" />
+                        </LinearLayout>
+
+                        <View style="@style/divid" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="招工人数" />
+
+                            <View style="@style/weight" />
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="1" />
+                        </LinearLayout>
+
+                        <View style="@style/divid" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="合同开始日期" />
+
+                            <View style="@style/weight" />
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="2016-11-26" />
+                        </LinearLayout>
+
+                        <View style="@style/divid" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="合同截止日期" />
+
+                            <View style="@style/weight" />
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="2016-12-26" />
+                        </LinearLayout>
+
+                        <View style="@style/divid" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="每天工作开始日期" />
+
+                            <View style="@style/weight" />
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="9：00" />
+                        </LinearLayout>
+
+                        <View style="@style/divid" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="每天工作开始时间" />
+
+                            <View style="@style/weight" />
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="18：00" />
+                        </LinearLayout>
+
+                        <View style="@style/divid" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="工作时间周历" />
+
+                        </LinearLayout>
+
+                        <View style="@style/divid" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="单价" />
+
+                            <View style="@style/weight" />
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="￥500.00/天" />
+                        </LinearLayout>
+
+                        <View style="@style/divid" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="合同金额" />
+
+                            <View style="@style/weight" />
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="￥2500.00" />
+                        </LinearLayout>
+
+                        <View style="@style/divid" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="结算方式" />
+
+                            <View style="@style/weight" />
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="完工即结" />
+                        </LinearLayout>
+
+                        <View style="@style/divid" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="工作地点" />
+
+                            <View style="@style/weight" />
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:layout_width="230px"
+                                android:drawableRight="@drawable/btn_navigation"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:text="天津市西青区进京路2号" />
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingRight="30px"
+                            android:paddingTop="10px"
+                            android:text="注：点击工作地点一栏可进入导航页对地点进行导航"
+                            android:textColor="#f68465"
+                            android:textSize="24px" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="是否资方提供工作期间的保险" />
+
+                            <View style="@style/weight" />
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="是" />
+                        </LinearLayout>
+
+                        <View style="@style/divid" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="是否资方提供工作期间的工作餐" />
+
+                            <View style="@style/weight" />
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="否" />
+                        </LinearLayout>
+
+                        <View style="@style/divid" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="是否资方提供工作期间的住宿" />
+
+                            <View style="@style/weight" />
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="否" />
+                        </LinearLayout>
+
+                        <View style="@style/divid" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="是否资方提供工作期间的劳动工具" />
+
+                            <View style="@style/weight" />
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="是" />
+                        </LinearLayout>
+
+                        <View style="@style/divid" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="是否资方承担因工作产生的交通费" />
+
+                            <View style="@style/weight" />
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="是" />
+                        </LinearLayout>
+
+                        <View style="@style/divid" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26px"
+                            android:paddingRight="26px">
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="是否资方承担因工作产生的通讯费" />
+
+                            <View style="@style/weight" />
+
+                            <TextView
+                                style="@style/modify_details_item_tv"
+                                android:text="是" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20px"
+                            android:background="#FFF"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="28px"
+                                android:paddingTop="30px"
+                                android:text="工作完成标准"
+                                android:textColor="#323232"
+                                android:textSize="30px" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20px"
+                                android:layout_marginLeft="30px"
+                                android:layout_marginRight="30px"
+                                android:layout_marginTop="12px"
+                                android:background="@drawable/text_bg"
+                                android:paddingBottom="26px"
+                                android:paddingLeft="15px"
+                                android:paddingRight="15px"
+                                android:paddingTop="26px"
+                                android:text="请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好"
+                                android:textColor="#656565"
+                                android:textSize="26px" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20px"
+                            android:background="#FFF"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="28px"
+                                android:paddingTop="30px"
+                                android:text="备注"
+                                android:textColor="#323232"
+                                android:textSize="30px" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20px"
+                                android:layout_marginLeft="30px"
+                                android:layout_marginRight="30px"
+                                android:layout_marginTop="12px"
+                                android:background="@drawable/text_bg"
+                                android:paddingBottom="26px"
+                                android:paddingLeft="15px"
+                                android:paddingRight="15px"
+                                android:paddingTop="26px"
+                                android:text="请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好"
+                                android:textColor="#656565"
+                                android:textSize="26px" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:orientation="horizontal"
+                android:paddingBottom="20px"
+                android:paddingTop="20px">
+
+                <View style="@style/weight" />
+
+                <Button
+                    style="@style/btn_save_style"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20px"
+                    android:paddingLeft="15px"
+                    android:paddingRight="15px"
+                    android:text="执行原合同" />
+
+                <Button
+                    style="@style/btn_save_style"
+                    android:layout_marginRight="20px"
+                    android:text="修改合同" />
+
+                <cn.zero.android.common.view.FButton
+                    style="@style/fbtn_release_style"
+                    android:text="同意" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

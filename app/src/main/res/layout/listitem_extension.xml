@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12px"
+        android:layout_marginRight="12px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/linlay_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:text="推广奖金"
+                android:textColor="@color/clr_main"
+                android:textSize="28px" />
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20px"
+            android:paddingRight="20px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:text="昵称："
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/list_exten_nickname"
+                style="@style/listitem_text"
+                android:text="jingle"
+                android:textSize="28px" />
+
+            <View style="@style/weight" />
+
+            <TextView
+                style="@style/listitem_text"
+                android:text="会员编号："
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/list_exten_member"
+                style="@style/listitem_text"
+                android:text="102155454"
+                android:textSize="28px" />
+        </LinearLayout>
+
+        <View
+            style="@style/divid"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20px"
+            android:paddingRight="20px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:text="结算金额："
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/list_exten_settlement"
+                style="@style/listitem_text"
+                android:text="￥2650.00"
+                android:textSize="28px" />
+
+            <View style="@style/weight" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/listitem_text"
+                android:text="推广奖励："
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/list_exten_price"
+                style="@style/listitem_text"
+                android:text="￥256"
+                android:textColor="@color/clr_main"
+                android:textSize="28px" />
+        </LinearLayout>
+
+        <View
+            style="@style/divid"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20px"
+            android:paddingRight="20px">
+
+            <TextView
+                style="@style/listitem_text"
+                android:text="日期："
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/list_exten_date"
+                style="@style/listitem_text"
+                android:text="2016.01.02"
+                android:textSize="28px" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="165px"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/list_new_job_imgs"
+        android:layout_width="165px"
+        android:layout_height="165px"
+        android:adjustViewBounds="true"
+        android:background="@color/clr_bg"
+        android:src="@drawable/img_index" />
+
+    <ImageView
+        android:id="@+id/list_new_job_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_delected"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

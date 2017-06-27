@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/a_s_change_phone"
+            style="@style/new_job_order_text"
+            android:text="更改手机号" />
+
+        <View style="@style/divid" />
+
+        <TextView
+            android:id="@+id/a_s_password"
+            style="@style/new_job_order_text"
+            android:text="设置安全密码" />
+
+        <View style="@style/divid" />
+
+        <TextView
+            android:id="@+id/a_s_delete"
+            style="@style/new_job_order_text"
+            android:text="申请删除账号" />
+
+    </LinearLayout>
+</LinearLayout>

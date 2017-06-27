@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?><!--推广奖励-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView
+            android:id="@+id/extension_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:swipe_mode="both" />
+
+        <TextView
+            android:id="@+id/extension_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="暂无相关数据"
+            android:textColor="#323232"
+            android:textSize="34px"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View style="@style/divider" />
+
+    <LinearLayout
+        android:id="@+id/extension_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10px"
+        android:paddingTop="10px"
+        android:visibility="gone">
+
+        <View style="@style/weight" />
+
+        <TextView
+            style="@style/new_job_order_text"
+            android:layout_width="wrap_content"
+            android:drawableRight="@color/white"
+            android:paddingRight="0px"
+            android:text="小计：" />
+
+        <TextView
+            android:id="@+id/total_tv"
+            style="@style/new_job_order_text"
+            android:layout_width="wrap_content"
+            android:drawableRight="@color/white"
+            android:paddingLeft="0px"
+            android:text="￥2605.00"
+            android:textColor="@color/clr_main" />
+    </LinearLayout>
+</LinearLayout>

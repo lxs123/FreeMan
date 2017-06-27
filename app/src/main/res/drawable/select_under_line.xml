@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+     <!-- 选中状态 -->
+      <item android:state_checked="true">
+        <!-- 设置层次背景 -->
+        <layer-list>
+          <!-- 底层 -->
+          <item>
+            <shape android:shape="rectangle"><!-- 画矩形 -->
+              <!--边框色-->
+              <stroke android:width="1dp" android:color="@color/transparent"/>
+              <!-- 背景色 -->
+              <solid android:color="@color/transparent"/>
+              <!-- 圆角 -->
+              <corners android:radius="3dp"/>
+            </shape>
+          </item>
+          <!-- 上层 -->
+          <item android:top="36.5dp">
+          <!-- top：距离顶部多少db开始画线，需配合View的高度绘制 -->
+            <shape android:shape="rectangle">
+              <solid android:color="@color/clr_main"/>
+            </shape>
+          </item>
+        </layer-list>
+      </item>
+      <!-- 默认状态 -->
+      <item>
+        <shape>
+          <stroke android:width="1dp" android:color="@color/transparent"/>
+          <solid android:color="@color/white"/>
+        </shape>
+      </item>
+</selector>

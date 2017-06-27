@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">自由人</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="viewpager_indicator">%1$s/%2$s</string>
+    <!--//被除数 加载时。。-->
+    <string name="load_num">10</string>
+    <!--//余数-->
+    <string name="load_min_num">8</string>
+</resources>

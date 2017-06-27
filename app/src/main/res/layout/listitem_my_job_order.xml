@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="212px"
+            android:layout_height="212px">
+
+            <ImageView
+                android:id="@+id/list_my_jo_img"
+                android:layout_width="172px"
+                android:layout_height="172px"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40px"
+                 />
+
+            <ImageView
+                android:id="@+id/list_my_jo_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_zhaog" />
+
+            <TextView
+                android:id="@+id/list_my_jo_page"
+                android:layout_width="172px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20px"
+                android:background="#99000000"
+                android:gravity="center"
+                android:paddingBottom="5px"
+                android:paddingTop="5px"
+                android:text="5张"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/listitem_text"
+                    android:text="工作：" />
+
+                <TextView
+                    android:id="@+id/list_my_jo_skill"
+                    style="@style/listitem_text"
+                    android:singleLine="true"
+                    android:text="房屋装修" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/listitem_text"
+                    android:text="合同开始时间：" />
+
+                <TextView
+                    android:id="@+id/list_my_jo_start_date"
+                    style="@style/listitem_text"
+                    android:text="2016-11-24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/listitem_text"
+                    android:text="合同截止时间：" />
+
+                <TextView
+                    android:id="@+id/list_my_jo_end_date"
+                    style="@style/listitem_text"
+                    android:text="2016-11-24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/listitem_text"
+                    android:text="金额：" />
+
+                <TextView
+                    android:id="@+id/list_my_jo_total"
+                    style="@style/listitem_text"
+                    android:text="￥1000.00"
+                    android:textColor="@color/clr_main" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/listitem_text"
+                    android:text="单价：" />
+
+                <TextView
+                    android:id="@+id/list_my_jo_price"
+                    style="@style/listitem_text"
+                    android:text="￥200/天"
+                    android:textColor="@color/clr_main" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/listitem_text"
+                    android:text="结算方式：" />
+
+                <TextView
+                    android:id="@+id/list_my_jo_payment"
+                    style="@style/listitem_text"
+                    android:text="完工即结" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/listitem_text"
+                    android:text="工作地点：" />
+
+                <TextView
+                    android:id="@+id/list_my_jo_address"
+                    style="@style/listitem_text"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:paddingRight="30px"
+                    android:text="天津市红桥区咸阳北路街" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10px"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="18px"
+        android:paddingTop="18px">
+
+        <View style="@style/weight" />
+
+        <RelativeLayout
+            android:layout_width="165px"
+            android:layout_height="65px">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/list_feedback_btn"
+                    style="@style/btn_save_style"
+                    android:text="查看反馈" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/list_feedback_spot"
+                android:layout_width="15px"
+                android:layout_height="15px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18px"
+                android:layout_marginTop="11px"
+                android:visibility="gone"
+                android:background="@drawable/index_message_bg" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/modify_btn"
+            style="@style/btn_save_style"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:text="修改" />
+
+        <cn.zero.android.common.view.FButton
+            android:id="@+id/release_fbtn"
+            style="@style/fbtn_release_style" />
+    </LinearLayout>
+
+</LinearLayout>

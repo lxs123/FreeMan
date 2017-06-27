@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/start_day_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/start_day_name"
+            style="@style/new_job_order_text"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableRight="@color/white"
+            android:text="合同开始日期" />
+
+        <TextView
+            android:id="@+id/start_day"
+            style="@style/new_job_order_text"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:paddingLeft="21px"
+            android:singleLine="true"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <View style="@style/divid" />
+
+    <LinearLayout
+        android:id="@+id/end_day_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/end_day_name"
+            style="@style/new_job_order_text"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableRight="@color/white"
+            android:text="合同截止日期" />
+
+        <TextView
+            android:id="@+id/end_day"
+            style="@style/new_job_order_text"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:paddingLeft="21px"
+            android:singleLine="true"
+            android:textSize="28px" />
+    </LinearLayout>
+
+
+    <View style="@style/divid" />
+
+    <LinearLayout
+        android:id="@+id/start_time_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/new_job_order_text"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableRight="@color/white"
+            android:text="每天工作开始时间" />
+
+        <TextView
+            android:id="@+id/start_time"
+            style="@style/new_job_order_text"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:paddingLeft="21px"
+            android:singleLine="true"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <View style="@style/divid" />
+
+    <LinearLayout
+        android:id="@+id/end_time_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/new_job_order_text"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableRight="@color/white"
+            android:text="每天工作结束时间" />
+
+        <TextView
+            android:id="@+id/end_time"
+            style="@style/new_job_order_text"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:paddingLeft="21px"
+            android:singleLine="true"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/end_time_divid"
+        style="@style/divid" />
+</LinearLayout>

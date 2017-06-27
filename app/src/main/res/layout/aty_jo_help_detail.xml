@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/clr_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="20px"
+            android:paddingLeft="20px"
+            android:paddingTop="30px">
+
+            <TextView
+                android:id="@+id/jo_help_det_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1、"
+                android:textColor="@color/clr_main"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/jo_help_det_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="现场传照片有什么好处"
+                android:textColor="@color/clr_main"
+                android:textSize="30px" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="20px"
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:paddingTop="20px">
+
+            <WebView
+                android:id="@+id/jo_help_det_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

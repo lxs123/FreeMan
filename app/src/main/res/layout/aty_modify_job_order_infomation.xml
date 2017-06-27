@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?><!--新建招工单-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:drawableRight="@drawable/btn_enter"
+                android:padding="30px"
+                android:text="工作"
+                android:textColor="#323232"
+                android:textSize="30px"/>
+
+            <View style="@style/divid"/>
+
+
+            <TextView
+                style="@style/new_job_order_text"
+                android:text="合同开始日期"/>
+
+            <View style="@style/divid"/>
+
+            <TextView
+                style="@style/new_job_order_text"
+                android:text="合同截止日期"/>
+
+            <View style="@style/divid"/>
+
+            <TextView
+                style="@style/new_job_order_text"
+                android:text="每天工作开始时间"/>
+
+            <View style="@style/divid"/>
+
+            <TextView
+                style="@style/new_job_order_text"
+                android:text="每天工作截止时间"/>
+
+            <View style="@style/divid"/>
+
+            <TextView
+                style="@style/new_job_order_text"
+                android:text="工作时间周历"/>
+
+            <View style="@style/divid"/>
+
+            <TextView
+                style="@style/new_job_order_text"
+                android:text="招工截止时间"/>
+
+            <View style="@style/divid"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:text="金额:"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:paddingRight="30px"
+                    android:textColor="#323232"
+                    android:textSize="30px"/>
+            </LinearLayout>
+
+
+            <View style="@style/divid"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:text="单价:"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:paddingRight="30px"
+                    android:textColor="#323232"
+                    android:textSize="30px"/>
+
+                <TextView
+                    android:id="@+id/new_job_order_unit"
+                    android:layout_width="280px"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/normal_white_pressed_gray"
+                    android:drawablePadding="10px"
+                    android:drawableRight="@drawable/btn_enter"
+                    android:padding="30px"
+                    android:text="单位"
+                    android:textColor="#323232"
+                    android:textSize="30px"/>
+            </LinearLayout>
+
+            <View style="@style/divid"/>
+
+            <TextView
+                style="@style/new_job_order_text"
+                android:text="结算方式"/>
+
+            <View style="@style/divid"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text_no_img"
+                    android:text="是否资方提供工作期间的保险"/>
+
+                <View style="@style/weight"/>
+
+                <cn.zero.android.common.view.ToggleButton
+                    style="@style/toggle_btn_style"/>
+            </LinearLayout>
+
+            <View style="@style/divid"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text_no_img"
+                    android:text="是否资方提供工作期间的工作餐"/>
+
+                <View style="@style/weight"/>
+
+                <cn.zero.android.common.view.ToggleButton
+                    style="@style/toggle_btn_style"/>
+            </LinearLayout>
+
+            <View style="@style/divid"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text_no_img"
+                    android:text="是否资方提供工作期间的住宿"/>
+
+                <View style="@style/weight"/>
+
+                <cn.zero.android.common.view.ToggleButton
+                    style="@style/toggle_btn_style"/>
+            </LinearLayout>
+
+            <View style="@style/divid"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text_no_img"
+                    android:text="是否资方提供工作期间的劳动工具"/>
+
+                <View style="@style/weight"/>
+
+                <cn.zero.android.common.view.ToggleButton
+                    style="@style/toggle_btn_style"/>
+            </LinearLayout>
+
+            <View style="@style/divid"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text_no_img"
+                    android:text="是否资方承担因工作产生的交通费"/>
+
+                <View style="@style/weight"/>
+
+                <cn.zero.android.common.view.ToggleButton
+                    style="@style/toggle_btn_style"/>
+            </LinearLayout>
+
+            <View style="@style/divid"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text_no_img"
+                    android:text="是否资方承担因工作产生的通讯费"/>
+
+                <View style="@style/weight"/>
+
+                <cn.zero.android.common.view.ToggleButton
+                    style="@style/toggle_btn_style"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:paddingBottom="12px"
+            android:paddingLeft="30px"
+            android:paddingTop="20px"
+            android:text="工作完成标准"
+            android:textColor="#333333"
+            android:textSize="28px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="20px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_bg"
+                android:hint="请详细描述您的工作完成标准"
+                android:paddingBottom="20px"
+                android:paddingLeft="15px"
+                android:paddingTop="26px"
+                android:textColor="#656565"
+                android:textSize="26px"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:paddingBottom="12px"
+            android:paddingLeft="30px"
+            android:paddingTop="20px"
+            android:text="备注"
+            android:textColor="#333333"
+            android:textSize="28px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="20px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_bg"
+                android:hint="请详细描述您需要备注的内容"
+                android:paddingBottom="20px"
+                android:paddingLeft="15px"
+                android:paddingTop="26px"
+                android:textColor="#656565"
+                android:textSize="26px"/>
+        </LinearLayout>
+
+        <View
+            style="@style/divid"
+            android:layout_marginTop="60px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/new_jo_release"
+                android:layout_width="match_parent"
+                android:layout_height="65px"
+                android:layout_marginLeft="65px"
+                android:layout_marginRight="65px"
+                android:text="修改并提交"
+                android:textColor="@color/white"
+                android:textSize="32px"
+                app:buttonColor="@color/clr_main"
+                app:cornerRadius="10px"
+                app:shadowEnabled="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

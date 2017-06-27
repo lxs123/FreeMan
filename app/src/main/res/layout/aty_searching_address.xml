@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/clr_main">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30px"
+            android:src="@drawable/btn_back" />
+
+
+        <cn.zero.android.common.view.ClearEditText
+            android:id="@+id/searching_address_cetxt_searching"
+            android:layout_width="520px"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15px"
+            android:layout_marginTop="15px"
+            android:background="@drawable/my_jo_editbg"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="15px"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:paddingBottom="10px"
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:paddingTop="10px" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/searching_address_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

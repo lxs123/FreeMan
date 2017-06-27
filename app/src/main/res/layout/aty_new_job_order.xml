@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?><!--新建招工单-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/new_jo_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fcfbcc"
+            android:gravity="center_horizontal"
+            android:paddingBottom="20px"
+            android:paddingTop="20px"
+            android:text="“*”表示必选项，请您务必填写"
+            android:textColor="#ff9d4e"
+            android:textSize="26px" />
+
+        <LinearLayout
+            android:id="@+id/new_jo_img_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12px"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="30px"
+            android:paddingLeft="22px"
+            android:paddingRight="10px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20px"
+                android:paddingTop="22px"
+                android:text="工作现场图片"
+                android:textColor="#323232"
+                android:textSize="26px" />
+
+            <com.toocms.freeman.ui.view.MyGridView
+                android:id="@+id/new_job_order_imgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="10px"
+                android:numColumns="4"
+                android:verticalSpacing="30px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/new_jo_work_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/icon_annotated"
+                    android:drawableRight="@color/white"
+                    android:text="工作" />
+
+                <TextView
+                    android:id="@+id/new_jo_work"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:background="@null"
+                    android:maxWidth="260px"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/icon_annotated"
+                    android:drawableRight="@color/white"
+                    android:text="招工人数:" />
+
+                <EditText
+                    android:id="@+id/new_jo_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:paddingRight="30px"
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <include layout="@layout/include_data_content" />
+
+            <LinearLayout
+                android:id="@+id/new_jo_week_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableRight="@color/white"
+                    android:text="工作时间周历" />
+
+                <TextView
+                    android:id="@+id/new_jo_week_tv"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:maxWidth="235px"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+            <!--FFFCFAED-->
+            <LinearLayout
+                android:id="@+id/new_jo_week_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:background="#FFFCFAED"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.toocms.freeman.ui.view.MyGridView
+                    android:id="@+id/new_jo_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numColumns="4"
+                    android:paddingBottom="30px"
+                    android:paddingTop="30px" />
+
+                <cn.zero.android.common.view.FButton
+                    android:id="@+id/new_jo_werk_sure"
+                    android:layout_width="260px"
+                    android:layout_height="70px"
+                    android:layout_gravity="center_horizontal"
+                    android:text="确定"
+                    android:textColor="@color/white"
+                    android:textSize="34px"
+                    app:buttonColor="#FFEA8668"
+                    app:cornerRadius="10px"
+                    app:shadowEnabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="30px"
+                    android:paddingTop="15px"
+                    android:text="可以同时选择多个日期"
+                    android:textColor="#FFEF905E"
+                    android:textSize="26px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/new_jo_end_retime_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableRight="@color/white"
+                    android:text="招工截止日期" />
+
+                <TextView
+                    android:id="@+id/new_jo_end_retime"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:background="@null"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/icon_annotated"
+                    android:drawableRight="@color/white"
+                    android:text="单价:" />
+
+                <EditText
+                    android:id="@+id/new_jo_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:paddingRight="30px"
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+
+                <LinearLayout
+                    android:id="@+id/new_job_order_unit_click"
+                    android:layout_width="280px"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/normal_white_pressed_gray"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_annotated"
+                        android:drawablePadding="10px"
+                        android:padding="30px"
+                        android:text="单位"
+                        android:textColor="#323232"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/new_job_order_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10px"
+                        android:drawableRight="@drawable/btn_enter"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:paddingRight="30px"
+                        android:text=""
+                        android:textColor="#323232"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/icon_annotated"
+                    android:drawableRight="@color/white"
+                    android:text="金额:" />
+
+                <EditText
+                    android:id="@+id/new_jo_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingRight="30px"
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:id="@+id/new_jo_pay_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/icon_annotated"
+                    android:drawableRight="@color/white"
+                    android:text="结算方式" />
+
+                <TextView
+                    android:id="@+id/new_jo_pay"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:background="@null"
+                    android:text=""
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:id="@+id/new_jo_addresss_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/icon_annotated"
+                    android:drawableRight="@color/white"
+                    android:text="工作地点" />
+
+                <TextView
+                    android:id="@+id/new_jo_addresss"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:background="@null"
+                    android:maxWidth="280px"
+                    android:singleLine="true"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="40px"
+                    android:text="是否资方提供工作期间的保险" />
+
+                <com.toocms.freeman.ui.FreeManToggle
+                    android:id="@+id/new_jo_insurance"
+                    style="@style/toggle_btn_style" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="40px"
+                    android:text="是否资方提供工作期间的工作餐" />
+
+                <com.toocms.freeman.ui.FreeManToggle
+                    android:id="@+id/new_jo_lunch"
+                    style="@style/toggle_btn_style" />
+
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="40px"
+                    android:text="是否资方提供工作期间的住宿" />
+
+                <com.toocms.freeman.ui.FreeManToggle
+                    android:id="@+id/new_jo_live"
+                    style="@style/toggle_btn_style" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="40px"
+                    android:text="是否资方提供工作期间的劳动工具" />
+
+                <com.toocms.freeman.ui.FreeManToggle
+                    android:id="@+id/new_jo_utils"
+                    style="@style/toggle_btn_style" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="40px"
+                    android:text="是否资方承担因工作产生的交通费" />
+
+                <com.toocms.freeman.ui.FreeManToggle
+                    android:id="@+id/new_jo_transport"
+                    style="@style/toggle_btn_style"
+                    />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="40px"
+                    android:text="是否资方承担因工作产生的通讯费" />
+
+                <com.toocms.freeman.ui.FreeManToggle
+                    android:id="@+id/new_jo_communications"
+                    style="@style/toggle_btn_style" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:paddingBottom="12px"
+            android:paddingLeft="30px"
+            android:paddingTop="20px"
+            android:text="工作完成标准"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="20px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <EditText
+                android:id="@+id/new_jo_work_standard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_bg"
+                android:hint="请详细描述您的工作完成标准(1-150字)"
+                android:maxLength="150"
+                android:paddingBottom="20px"
+                android:paddingLeft="15px"
+                android:paddingTop="26px"
+                android:textColor="#656565"
+                android:textSize="26px" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:paddingBottom="12px"
+            android:paddingLeft="30px"
+            android:paddingTop="20px"
+            android:text="备注"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="20px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <EditText
+                android:id="@+id/new_jo_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_bg"
+                android:hint="请详细描述您需要备注的内容(0-150字)"
+                android:paddingBottom="20px"
+                android:paddingLeft="15px"
+                android:paddingTop="26px"
+                android:textColor="#656565"
+                android:textSize="26px" />
+        </LinearLayout>
+
+        <View
+            style="@style/divider"
+            />
+
+        <LinearLayout
+            android:id="@+id/new_jo_sure_contract"
+            android:layout_width="match_parent"
+            android:layout_height="110px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/new_jo_f_btn_keep"
+                style="@style/fbtn_release_style"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:text="确认修改合同并提交" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/new_jo_edit_content"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/new_jo_edit_save"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="65px"
+                android:layout_marginRight="65px"
+                android:text="修改并保存"
+                android:textColor="@color/white"
+                android:textSize="32px"
+                app:buttonColor="@color/clr_main"
+                app:cornerRadius="10px"
+                app:shadowEnabled="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/new_jo_btn_content"
+            android:layout_width="match_parent"
+            android:layout_height="110px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View style="@style/weight" />
+
+            <Button
+                android:id="@+id/new_jo_save"
+                android:layout_width="160px"
+                android:layout_height="65px"
+                android:layout_marginRight="20px"
+                android:background="@drawable/btn_save"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="#467cd4"
+                android:textSize="32px" />
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/new_jo_release"
+                android:layout_width="160px"
+                android:layout_height="65px"
+                android:layout_marginRight="20px"
+                android:text="发布"
+                android:textColor="@color/white"
+                android:textSize="32px"
+                app:buttonColor="@color/clr_main"
+                app:cornerRadius="10px"
+                app:shadowEnabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

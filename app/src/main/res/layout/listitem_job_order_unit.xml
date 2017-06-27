@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/list_job_order_text"
+        style="@style/new_job_order_text"
+        android:drawableRight="@color/white"
+        android:text="时间"
+        android:textColor="#323232"/>
+
+    <View android:id="@+id/list_unit_divid"
+        style="@style/divid" />
+</LinearLayout>

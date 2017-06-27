@@ -1,0 +1,466 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/clr_bg"
+            android:orientation="vertical">
+
+            <View style="@style/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="30px"
+                android:paddingLeft="22px"
+                android:paddingRight="10px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20px"
+                    android:paddingTop="22px"
+                    android:text="技能展示照片"
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+
+                <com.toocms.freeman.ui.view.MyGridView
+                    android:id="@+id/new_job_order_imgs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10px"
+                    android:numColumns="4"
+                    android:verticalSpacing="30px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/s_i_c_skill_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/normal_white_pressed_gray"
+                    android:orientation="horizontal"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        style="@style/modify_details_item_tv"
+                        android:text="技能" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/s_i_c_skill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:maxWidth="200px"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="房屋装修 家政 厕所维修"
+                        android:textColor="#323232"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:orientation="horizontal"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px">
+
+                    <TextView
+                        style="@style/modify_details_item_tv"
+                        android:text="可提供人员数量" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/s_i_c_person"
+                        style="@style/modify_details_item_tv"
+                        android:text="10" />
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:orientation="horizontal"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px">
+
+                    <TextView
+                        style="@style/modify_details_item_tv"
+                        android:text="工作开始日期" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/s_i_c_start_date"
+                        style="@style/modify_details_item_tv"
+                        android:text="2016-11-26" />
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:orientation="horizontal"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px">
+
+                    <TextView
+                        style="@style/modify_details_item_tv"
+                        android:text="工作截止日期" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/s_i_c_end_date"
+                        style="@style/modify_details_item_tv"
+                        android:text="2016-12-26" />
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:orientation="horizontal"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/modify_details_item_tv"
+                        android:text="每天工作开始时间" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/s_i_c_start_time"
+                        style="@style/modify_details_item_tv"
+                        android:text="9：00" />
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:orientation="horizontal"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px">
+
+                    <TextView
+                        style="@style/modify_details_item_tv"
+                        android:text="每天工作截止时间" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/s_i_c_end_time"
+                        style="@style/modify_details_item_tv"
+                        android:text="18：00" />
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:id="@+id/s_i_c_week_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/normal_white_pressed_gray"
+                    android:orientation="horizontal"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px">
+
+                    <TextView
+                        style="@style/modify_details_item_tv"
+                        android:text="工作时间周历" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/s_i_c_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:maxWidth="200px"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:textColor="#323232"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:orientation="horizontal"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px">
+
+                    <TextView
+                        style="@style/modify_details_item_tv"
+                        android:text="单价" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/s_i_c_price"
+                        style="@style/modify_details_item_tv"
+                        android:text="￥2500.00/天" />
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:orientation="horizontal"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px">
+
+                    <TextView
+                        style="@style/modify_details_item_tv"
+                        android:text="结算方式" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/s_i_c_payment"
+                        style="@style/modify_details_item_tv"
+                        android:text="完工即结" />
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:id="@+id/s_i_c_area_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:orientation="horizontal"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px">
+
+                    <TextView
+                        style="@style/modify_details_item_tv"
+                        android:text="工作地域" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/s_i_c_area"
+                        style="@style/modify_details_item_tv"
+                        android:layout_width="wrap_content"
+                        android:maxWidth="350px"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="" />
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:orientation="horizontal"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px">
+
+                    <TextView
+                        style="@style/modify_details_item_tv"
+                        android:text="是否资方提供工作期间的保险" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/s_i_c_insurance"
+                        style="@style/modify_details_item_tv"
+                        android:text="是" />
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:orientation="horizontal"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px">
+
+                    <TextView
+
+                        style="@style/modify_details_item_tv"
+                        android:text="是否资方提供工作期间的工作餐" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/s_i_c_lunch"
+                        style="@style/modify_details_item_tv"
+                        android:text="否" />
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:orientation="horizontal"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px">
+
+                    <TextView
+                        style="@style/modify_details_item_tv"
+                        android:text="是否资方提供工作期间的住宿" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/s_i_c_live"
+                        style="@style/modify_details_item_tv"
+                        android:text="否" />
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:orientation="horizontal"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px">
+
+                    <TextView
+                        style="@style/modify_details_item_tv"
+                        android:text="是否资方提供工作期间的劳动工具" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/s_i_c_utils"
+                        style="@style/modify_details_item_tv"
+                        android:text="是" />
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:orientation="horizontal"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px">
+
+                    <TextView
+                        style="@style/modify_details_item_tv"
+                        android:text="是否资方承担因工作产生的交通费" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/s_i_c_transportation"
+                        style="@style/modify_details_item_tv"
+                        android:text="是" />
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:orientation="horizontal"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px">
+
+                    <TextView
+                        style="@style/modify_details_item_tv"
+                        android:text="是否资方承担因工作产生的通讯费" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/s_i_c_communications"
+                        style="@style/modify_details_item_tv"
+                        android:text="是" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="#FFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="28px"
+                    android:paddingTop="30px"
+                    android:text="其他"
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/s_i_c_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="12px"
+                    android:background="@drawable/text_bg"
+                    android:paddingBottom="26px"
+                    android:paddingLeft="15px"
+                    android:paddingRight="15px"
+                    android:paddingTop="26px"
+                    android:text="请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好"
+                    android:textColor="#656565"
+                    android:textSize="26px" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.zero.android.common.view.banner.ConvenientBanner
+        android:id="@+id/guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></cn.zero.android.common.view.banner.ConvenientBanner>
+
+    <cn.zero.android.common.view.FButton
+        android:id="@+id/guide_experience"
+        android:layout_width="wrap_content"
+        android:layout_height="80px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="280px"
+        android:text="开始体验"
+        android:paddingRight="60px"
+        android:paddingLeft="60px"
+        android:textColor="@color/clr_default_sub_text"
+        android:textSize="34px"
+        app:buttonColor="#99cccccc"
+        app:cornerRadius="10px"
+        app:shadowEnabled="false" />
+</RelativeLayout>

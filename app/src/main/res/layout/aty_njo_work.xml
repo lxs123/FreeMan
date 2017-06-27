@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--新建工作订单-工作页-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fcfbcc"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20px"
+        android:paddingTop="20px"
+        android:text="可以同时选择多个工种"
+        android:textColor="#ff9d4e"
+        android:textSize="26px" />
+
+    <cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView
+        android:id="@+id/njo_work_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20px"
+        app:swipe_mode="disabled" />
+
+
+</LinearLayout>

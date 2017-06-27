@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10px">
+
+
+    <LinearLayout
+        android:id="@+id/list_collect_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10px">
+
+
+        <ImageView
+            android:id="@+id/select_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30px"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:paddingTop="30px"
+            android:src="@drawable/btn_unselect" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20px"
+            android:paddingRight="20px">
+
+            <cn.zero.android.common.view.shapeimageview.CircularImageView
+                android:id="@+id/header_cir"
+                android:layout_width="135px"
+                android:layout_height="135px"
+                android:src="@drawable/icon_head" />
+
+            <TextView
+                android:id="@+id/authentication_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="10px"
+                android:text="已认证"
+                android:textColor="#F6703C"
+                android:textSize="26px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="12px"
+                android:paddingTop="20px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="会员编号："
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/member_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10909086890"
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="12px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称："
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/nickname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="jingle"
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="12px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自由人/单位："
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/freeman_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自由人"
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="12px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别："
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/sex_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未填"
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="12px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="信用等级："
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+
+                <!--五颗星 待完善-->
+                <ImageView
+                    android:id="@+id/credit_rating_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4px"
+                    android:src="@drawable/icon_1star" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="12px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单价："
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥1098.00/天"
+                    android:textColor="#3768C2"
+                    android:textSize="26px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="12px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="技能："
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/skill_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="30px"
+                    android:text="房屋装修"
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_collect_num_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="12px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="成交数量："
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/list_collect_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_collect_distance_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="25px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="距离："
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/list_collect_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0Km"
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

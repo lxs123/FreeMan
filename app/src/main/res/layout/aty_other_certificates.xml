@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:paddingBottom="30px"
+        android:paddingLeft="30px"
+        android:paddingTop="30px"
+        android:text="上传其他证件照片"
+        android:textColor="#4D4D4D"
+        android:textSize="28px" />
+
+    <TextView
+        style="@style/prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="提示：可传驾照、护照、军官证、有利证明自己的身份类似身份证照片（照片清晰看清证件内容）"
+        android:textColor="#FB4848" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="16px"
+                    android:paddingTop="23px"
+                    android:text="你的图片"
+                    android:textColor="#4D4D4D" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="16px"
+                    android:paddingTop="23px"
+                    android:text="你的图片"
+                    android:textColor="#4D4D4D"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <com.toocms.freeman.ui.view.MyGridView
+                android:id="@+id/my_grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:numColumns="2" />
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/other_sure"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginBottom="100px"
+                android:layout_marginLeft="62px"
+                android:layout_marginRight="62px"
+                android:layout_marginTop="100px"
+                android:text="提交"
+                android:textColor="#FFF"
+                android:textSize="34px"
+                app:buttonColor="@color/clr_main"
+                app:cornerRadius="10px"
+                app:shadowEnabled="false" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/clr_bg"
+    tools:context="com.toocms.freeman.ui.index.SkillInformationAty">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--技能展示图片-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="30px"
+                android:paddingLeft="22px"
+                android:paddingRight="10px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20px"
+                    android:paddingTop="22px"
+                    android:text="技能展示图片"
+                    android:textColor="#323232"
+                    android:textSize="26px"/>
+
+                <com.toocms.freeman.ui.view.MyGridView
+                    android:id="@+id/new_job_order_imgs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10px"
+                    android:numColumns="4"
+                    android:verticalSpacing="30px"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px"
+                android:background="#FFF"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="27px"
+                    android:paddingRight="27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="技能"
+                        android:textColor="#323232"
+                        android:textSize="30px"/>
+
+                    <View style="@style/weight"/>
+
+                    <TextView
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="房屋装修 家政 厕所维修"
+                        android:textColor="#333333"
+                        android:textSize="28px"/>
+                </LinearLayout>
+
+                <View style="@style/divid"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="27px"
+                    android:paddingRight="27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="可提供人员数量"
+                        android:textColor="#323232"
+                        android:textSize="30px"/>
+
+                    <View style="@style/weight"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="10"
+                        android:textColor="#333333"
+                        android:textSize="28px"/>
+                </LinearLayout>
+
+                <View style="@style/divid"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="27px"
+                    android:paddingRight="27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="工作开始日期"
+                        android:textColor="#323232"
+                        android:textSize="30px"/>
+
+                    <View style="@style/weight"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="2016-11-26"
+                        android:textColor="#333333"
+                        android:textSize="28px"/>
+                </LinearLayout>
+
+                <View style="@style/divid"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="27px"
+                    android:paddingRight="27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="工作截至日期"
+                        android:textColor="#323232"
+                        android:textSize="30px"/>
+
+                    <View style="@style/weight"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="2016-11-26"
+                        android:textColor="#333333"
+                        android:textSize="28px"/>
+                </LinearLayout>
+
+                <View style="@style/divid"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="27px"
+                    android:paddingRight="27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="每天工作开始时间"
+                        android:textColor="#323232"
+                        android:textSize="30px"/>
+
+                    <View style="@style/weight"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="9：00"
+                        android:textColor="#333333"
+                        android:textSize="28px"/>
+                </LinearLayout>
+
+                <View style="@style/divid"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="27px"
+                    android:paddingRight="27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="每天工作截至时间"
+                        android:textColor="#323232"
+                        android:textSize="30px"/>
+
+                    <View style="@style/weight"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="18：00"
+                        android:textColor="#333333"
+                        android:textSize="28px"/>
+                </LinearLayout>
+
+                <View style="@style/divid"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="27px"
+                    android:paddingRight="27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="工作开始周历"
+                        android:textColor="#323232"
+                        android:textSize="30px"/>
+
+                    <View style="@style/weight"/>
+
+                    <TextView
+                        android:layout_width="150px"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="周一 周二 周六 周日"
+                        android:textColor="#333333"
+                        android:textSize="28px"/>
+                </LinearLayout>
+
+                <View style="@style/divid"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="27px"
+                    android:paddingRight="27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="单价"
+                        android:textColor="#323232"
+                        android:textSize="30px"/>
+
+                    <View style="@style/weight"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="￥2500.00/天"
+                        android:textColor="#333333"
+                        android:textSize="28px"/>
+                </LinearLayout>
+
+                <View style="@style/divid"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="27px"
+                    android:paddingRight="27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="结算方式"
+                        android:textColor="#323232"
+                        android:textSize="30px"/>
+
+                    <View style="@style/weight"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="完工即结"
+                        android:textColor="#333333"
+                        android:textSize="28px"/>
+                </LinearLayout>
+
+                <View style="@style/divid"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="27px"
+                    android:paddingRight="27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="工作地域"
+                        android:textColor="#323232"
+                        android:textSize="30px"/>
+
+                    <View style="@style/weight"/>
+
+                    <TextView
+                        android:layout_width="296px"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="河北省,保定市,西青区 河北省,保定市,河东区"
+                        android:textColor="#333333"
+                        android:textSize="28px"/>
+                </LinearLayout>
+
+                <View style="@style/divid"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="27px"
+                    android:paddingRight="27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="是否资方提供工作期间的保险"
+                        android:textColor="#323232"
+                        android:textSize="30px"/>
+
+                    <View style="@style/weight"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="是"
+                        android:textColor="#333333"
+                        android:textSize="28px"/>
+                </LinearLayout>
+
+                <View style="@style/divid"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="27px"
+                    android:paddingRight="27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="是否资方提供工作期间的工作餐"
+                        android:textColor="#323232"
+                        android:textSize="30px"/>
+
+                    <View style="@style/weight"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="否"
+                        android:textColor="#333333"
+                        android:textSize="28px"/>
+                </LinearLayout>
+
+                <View style="@style/divid"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="27px"
+                    android:paddingRight="27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="是否资方提供工作期间的住宿"
+                        android:textColor="#323232"
+                        android:textSize="30px"/>
+
+                    <View style="@style/weight"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="否"
+                        android:textColor="#333333"
+                        android:textSize="28px"/>
+                </LinearLayout>
+
+                <View style="@style/divid"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="27px"
+                    android:paddingRight="27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="是否资方提供工作期间的劳动工具"
+                        android:textColor="#323232"
+                        android:textSize="30px"/>
+
+                    <View style="@style/weight"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="是"
+                        android:textColor="#333333"
+                        android:textSize="28px"/>
+                </LinearLayout>
+
+                <View style="@style/divid"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="27px"
+                    android:paddingRight="27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="是否资方承担因工作产生的交通费"
+                        android:textColor="#323232"
+                        android:textSize="30px"/>
+
+                    <View style="@style/weight"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="是"
+                        android:textColor="#333333"
+                        android:textSize="28px"/>
+                </LinearLayout>
+
+                <View style="@style/divid"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="27px"
+                    android:paddingRight="27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="是否资方承担因工作产生的通讯费"
+                        android:textColor="#323232"
+                        android:textSize="30px"/>
+
+                    <View style="@style/weight"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:text="是"
+                        android:textColor="#333333"
+                        android:textSize="28px"/>
+                </LinearLayout>
+
+                <View style="@style/divid"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100px"
+                android:layout_marginTop="20px"
+                android:background="#FFF"
+                android:orientation="vertical"
+                android:paddingBottom="20px"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:paddingTop="20px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他"
+                    android:textColor="#323232"
+                    android:textSize="30px"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12px"
+                    android:background="@drawable/text_bg"
+                    android:paddingBottom="25px"
+                    android:paddingLeft="18px"
+                    android:paddingRight="18px"
+                    android:paddingTop="25px"
+                    android:text="请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好"
+                    android:textColor="#656565"
+                    android:textSize="26px"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

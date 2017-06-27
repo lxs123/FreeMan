@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?><!--我的评价列表-->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_contract_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_bg"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="@color/clr_main"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/my_jo_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingBottom="20px"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:paddingTop="20px"
+                android:src="@drawable/btn_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的评价"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <View style="@style/weight" />
+
+            <TextView
+                android:id="@+id/my_jo_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15px"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:paddingTop="15px"
+                android:text="筛选"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/my_contract_cap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_white_pressed_gray"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="发出的评价"
+                    android:textColor="@drawable/normal_black_check_blue"
+                    android:textSize="30px" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="60px"
+                    android:layout_gravity="center_vertical"
+                    android:background="#cccccc" />
+
+
+                <TextView
+                    android:id="@+id/my_contract_lab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_white_pressed_gray"
+                    android:gravity="center"
+                    android:text="收到的评价"
+                    android:textColor="@drawable/normal_black_check_blue"
+                    android:textSize="30px" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_gravity="bottom" />
+
+            <View
+                android:id="@+id/take_title_view"
+                android:layout_width="375px"
+                android:layout_height="5px"
+                android:layout_gravity="bottom"
+                android:background="@color/clr_main" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView
+                android:id="@+id/my_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:swipe_mode="both" />
+
+            <TextView
+                android:id="@+id/my_evaluate_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="暂无相关数据"
+                android:textColor="#323232"
+                android:textSize="34px"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/my_contract_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/my_contract_screen_lay"
+            android:layout_width="800px"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="52px"
+                android:layout_marginTop="33px"
+                android:paddingLeft="21px"
+                android:text="筛选"
+                android:textColor="#656565"
+                android:textSize="30px"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:paddingLeft="21px"
+                    android:text="合同编号："
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/my_cont_noid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:inputType="number"
+                    android:maxLength="18"
+                    android:paddingRight="30px"
+                    android:singleLine="true"
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <View style="@style/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:paddingLeft="21px"
+                    android:text="关键词："
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/my_cont_keywords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:maxLength="15"
+                    android:paddingRight="30px"
+                    android:singleLine="true"
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+
+            <View style="@style/divider" />
+
+            <LinearLayout
+                android:id="@+id/my_cont_work_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30px"
+                    android:paddingLeft="21px"
+                    android:paddingRight="30px"
+                    android:paddingTop="30px"
+                    android:text="工作内容"
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/my_cont_work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10px"
+                    android:drawableRight="@drawable/btn_enter"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:maxWidth="200px"
+                    android:paddingBottom="30px"
+                    android:paddingLeft="21px"
+                    android:paddingRight="30px"
+                    android:paddingTop="30px"
+                    android:text=""
+                    android:textColor="#323232"
+                    android:textSize="30px" />
+
+            </LinearLayout>
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/my_jo_sure"
+                style="@style/fbtn_release_style"
+                android:layout_width="match_parent"
+                android:layout_height="78px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="100px"
+                android:text="确定" />
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/my_evaluate_clear"
+                style="@style/fbtn_release_style"
+                android:layout_width="match_parent"
+                android:layout_height="78px"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="30px"
+                android:text="清空搜索条件"
+                app:buttonColor="#cccccc" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.v4.widget.DrawerLayout>

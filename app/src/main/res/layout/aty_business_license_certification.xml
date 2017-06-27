@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical"
+    tools:context=".ui.mine.baseinformation.IDcardAuthenticationAty">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:paddingBottom="30px"
+        android:paddingLeft="30px"
+        android:paddingTop="30px"
+        android:text="上传营业执照照片"
+        android:textColor="#4D4D4D"
+        android:textSize="28px" />
+
+    <TextView
+        style="@style/prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="图片必须清晰、完整、方向正确，不能带有无关的水印、标记或者其他网站的logo"
+        android:textColor="#FB4848" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="16px"
+            android:paddingTop="23px"
+            android:text="参考图片"
+            android:textColor="#4D4D4D" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="16px"
+            android:paddingTop="23px"
+            android:text="你的图片"
+            android:textColor="#4D4D4D" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="313px"
+            android:layout_height="313px"
+            android:src="@drawable/img_firm" />
+
+        <ImageView
+            android:id="@+id/business_img"
+            android:layout_width="313px"
+            android:layout_height="313px"
+            android:layout_marginLeft="30px"
+            android:src="@drawable/img_phone" />
+    </LinearLayout>
+
+    <cn.zero.android.common.view.FButton
+        android:id="@+id/business_sure"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginBottom="100px"
+        android:layout_marginLeft="62px"
+        android:layout_marginRight="62px"
+        android:layout_marginTop="100px"
+        android:text="提交"
+        android:textColor="#FFF"
+        android:textSize="34px"
+        app:buttonColor="@color/clr_main"
+        app:cornerRadius="10px"
+        app:shadowEnabled="false" />
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="375px"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/list_relieve_cause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/btn_select"
+        android:drawablePadding="20px"
+        android:paddingBottom="20px"
+        android:paddingRight="20px"
+        android:paddingLeft="20px"
+        android:paddingTop="20px"
+        android:singleLine="true"
+        android:text="质量不过关" />
+</LinearLayout>

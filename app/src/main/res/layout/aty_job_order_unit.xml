@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/clr_bg"
+              android:orientation="vertical">
+
+    <cn.zero.android.common.view.linearlistview.LinearListView
+        android:id="@+id/job_order_unit_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="@color/transparent"
+        android:orientation="vertical"/>
+
+    <!--<cn.zero.android.common.view.FButton-->
+        <!--android:id="@+id/sure_fbtn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="20px"-->
+        <!--android:layout_marginLeft="30px"-->
+        <!--android:layout_marginRight="30px"-->
+        <!--android:text="确定"-->
+        <!--android:textColor="#fff"-->
+        <!--app:buttonColor="@color/clr_main"-->
+        <!--app:cornerRadius="5px"-->
+        <!--app:shadowEnabled="false"/>-->
+
+</LinearLayout>

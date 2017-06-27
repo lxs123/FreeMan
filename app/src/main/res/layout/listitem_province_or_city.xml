@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/normal_white_pressed_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/province_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30px"
+        android:paddingLeft="30px"
+        android:paddingTop="30px"
+        android:text="天津"
+        android:textColor="#5B5B5B"
+        android:textSize="30px" />
+
+    <View
+        android:id="@+id/list_divid"
+        style="@style/divid" />
+</LinearLayout>

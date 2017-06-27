@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical"
+    tools:context=".ui.searchjob.TransactionRecordAty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72px"
+        android:background="#FFF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成交数量："
+            android:textColor="#323232"
+            android:textSize="30px"/>
+
+        <TextView
+            android:id="@+id/transaction_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#1B59BD"
+            android:textSize="30px"/>
+    </LinearLayout>
+
+    <View style="@style/divider"/>
+
+    <cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView
+        android:id="@+id/transaction_record_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:swipe_mode="pullDownFromTop"/>
+
+
+</LinearLayout>

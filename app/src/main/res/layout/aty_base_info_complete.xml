@@ -1,0 +1,504 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical"
+    tools:context=".ui.mine.baseinformation.BaseInformationCompleteFgt">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="28px"
+                    android:text="头像"
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+
+                <View style="@style/weight" />
+
+                <cn.zero.android.common.view.shapeimageview.CircularImageView
+                    android:id="@+id/head"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_marginRight="25px"
+                    android:src="@drawable/icon_head" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="33px"
+                    android:paddingTop="33px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:text="会员号"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/noid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="28px"
+                        android:textColor="#C4C4C4"
+                        android:textSize="26px" />
+
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="33px"
+                    android:paddingTop="33px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:text="昵称"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="28px"
+                        android:textColor="#656565"
+                        android:textSize="26px" />
+
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="33px"
+                    android:paddingTop="33px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:text="邀请人编号"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/invite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="28px"
+                        android:textColor="#656565"
+                        android:textSize="26px" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="33px"
+                    android:paddingTop="33px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:text="自由人/单位"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/role_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="28px"
+                        android:textColor="#656565"
+                        android:textSize="26px" />
+
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="33px"
+                    android:paddingTop="33px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:text="真实姓名"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="28px"
+                        android:textColor="#656565"
+                        android:textSize="26px" />
+
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="33px"
+                    android:paddingTop="33px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:text="联系电话"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/telephone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="28px"
+                        android:textColor="#656565"
+                        android:textSize="26px" />
+
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="33px"
+                    android:paddingTop="33px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:text="常驻地点"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/province_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="10"
+                        android:paddingRight="28px"
+                        android:textColor="#656565"
+                        android:textSize="26px" />
+
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="33px"
+                    android:paddingTop="33px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:text="性别"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/sex_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="28px"
+                        android:textColor="#656565"
+                        android:textSize="26px" />
+
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="33px"
+                    android:paddingTop="33px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:text="身高体重"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/bmi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="28px"
+                        android:textColor="#656565"
+                        android:textSize="26px" />
+
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="33px"
+                    android:paddingTop="33px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:text="单位名称"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/organization"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="28px"
+                        android:textColor="#656565"
+                        android:textSize="26px" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="33px"
+                    android:paddingTop="33px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:text="身份证认证"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/ident_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_certificat"
+                        android:drawablePadding="10px"
+                        android:paddingRight="28px"
+                        android:text="已认证"
+                        android:textColor="#656565"
+                        android:textSize="26px" />
+
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="33px"
+                    android:paddingTop="33px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:text="营业执照照片"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/business_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_none_select"
+                        android:drawablePadding="10px"
+                        android:paddingRight="28px"
+                        android:text="未上传"
+                        android:textColor="#F97A4E"
+                        android:textSize="26px" />
+
+                </LinearLayout>
+
+                <View style="@style/divid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="33px"
+                    android:paddingTop="33px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:text="其他证件"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <View style="@style/weight" />
+
+                    <TextView
+                        android:id="@+id/others_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_sucess"
+                        android:drawablePadding="10px"
+                        android:paddingRight="28px"
+                        android:text="已上传"
+                        android:textColor="#656565"
+                        android:textSize="26px" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="30px"
+                android:paddingBottom="20px"
+                android:background="@color/white"
+                android:paddingRight="30px"
+                android:layout_marginTop="20px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10px"
+                    android:paddingTop="20px"
+                    android:text="自我介绍"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/base_info_comp_other_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/text_bg"
+                    android:paddingBottom="28px"
+                    android:paddingLeft="18px"
+                    android:paddingRight="18px"
+                    android:paddingTop="20px"
+                    android:text="请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好请用保鲜膜包好"
+                    android:textColor="#656565"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

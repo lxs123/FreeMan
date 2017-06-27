@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><!--合同开始时间-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/new_job_order_text"
+                android:layout_weight="1"
+                android:drawableRight="@color/white"
+                android:text="合同开始时间" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dim_default_drawablepadding"
+                android:drawableRight="@drawable/btn_enter"
+                android:paddingRight="30px"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+        </LinearLayout>
+
+        <View style="@style/divid" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/new_job_order_text"
+                android:layout_weight="1"
+                android:drawableRight="@color/white"
+                android:text="合同截止时间" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dim_default_drawablepadding"
+                android:drawableRight="@drawable/btn_enter"
+                android:paddingRight="30px"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

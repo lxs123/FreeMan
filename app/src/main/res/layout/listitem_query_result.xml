@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_q_r_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/list_q_r_member_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/information_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:orientation="horizontal"
+            android:paddingBottom="26px">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:orientation="vertical"
+                android:paddingLeft="25px"
+                android:paddingTop="50px">
+
+                <cn.zero.android.common.view.shapeimageview.CircularImageView
+                    android:id="@+id/header_cir"
+                    android:layout_width="135px"
+                    android:layout_height="135px"
+                    android:src="@drawable/icon_head" />
+
+                <TextView
+                    android:id="@+id/authentication_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="10px"
+                    android:text="已认证"
+                    android:textColor="#F6703C"
+                    android:textSize="26px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12px"
+                    android:paddingTop="20px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="会员编号："
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <TextView
+                        android:id="@+id/member_number_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10909086890"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="昵称："
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <TextView
+                        android:id="@+id/nickname_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="jingle"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自由人/单位："
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <TextView
+                        android:id="@+id/freeman_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自由人"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="性别："
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <TextView
+                        android:id="@+id/sex_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未填"
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="信用等级："
+                        android:textColor="#323232"
+                        android:textSize="26px" />
+
+                    <!--五颗星 待完善-->
+                    <ImageView
+                        android:id="@+id/credit_rating_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/list_q_r_qianyue_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/icon_signed_me"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <!--左上角已修改的图片-->
+        <ImageView
+            android:id="@+id/coor_status_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_modify"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/bbyqy_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="20px"
+            android:src="@drawable/icon_signed_me"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/bbrqy_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="20px"
+            android:src="@drawable/icon_signed_other"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View style="@style/divider" />
+
+        <LinearLayout
+            android:id="@+id/job_information_detail_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="20px">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="172px"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/list_q_r_photo"
+                        android:layout_width="172px"
+                        android:layout_height="172px"
+                       />
+
+                    <TextView
+                        android:id="@+id/list_q_r_photo_num"
+                        android:layout_width="172px"
+                        android:layout_height="42px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#88000000"
+                        android:gravity="center"
+                        android:text="5张"
+                        android:textColor="#FFF" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10px"
+                android:paddingTop="20px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/listitem_text"
+                        android:text="工作：" />
+
+                    <TextView
+                        android:id="@+id/list_q_r_skill"
+                        style="@style/listitem_text"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingRight="30px"
+                        android:singleLine="true"
+                        android:text="房屋装修" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/listitem_text"
+                        android:text="合同开始时间：" />
+
+                    <TextView
+                        android:id="@+id/list_q_r_start_date"
+                        style="@style/listitem_text"
+                        android:text="2016-11-24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/listitem_text"
+                        android:text="合同截止时间：" />
+
+                    <TextView
+                        android:id="@+id/list_q_r_end_date"
+                        style="@style/listitem_text"
+                        android:text="2016-11-24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/listitem_text"
+                        android:text="金额：" />
+
+                    <TextView
+                        android:id="@+id/list_q_r_total"
+                        style="@style/listitem_text"
+                        android:text="￥1000.00"
+                        android:textColor="@color/clr_main" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/listitem_text"
+                        android:text="单价：" />
+
+                    <TextView
+                        android:id="@+id/list_q_r_price"
+                        style="@style/listitem_text"
+                        android:text="￥200/天"
+                        android:textColor="@color/clr_main" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/listitem_text"
+                        android:text="结算方式：" />
+
+                    <TextView
+                        android:id="@+id/list_q_r_payment"
+                        style="@style/listitem_text"
+                        android:text="完工即结" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/listitem_text"
+                        android:text="工作地点：" />
+
+                    <TextView
+                        android:id="@+id/list_q_r_address"
+                        style="@style/listitem_text"
+                        android:ellipsize="end"
+                        android:lines="2"
+                        android:paddingRight="30px"
+                        android:text="天津市红桥区咸阳北路街" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="18px"
+            android:paddingTop="18px">
+
+            <View style="@style/weight" />
+
+            <Button
+                android:id="@+id/list_q_r_look_edit"
+                style="@style/btn_save_style"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30px"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:text="修改"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/check_btn"
+                style="@style/btn_save_style"
+                android:layout_marginLeft="30px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:text="修改"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/modify_btn"
+                style="@style/btn_save_style"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:text="修改" />
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/release_fbtn"
+                style="@style/fbtn_release_style"
+                android:text="接单" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

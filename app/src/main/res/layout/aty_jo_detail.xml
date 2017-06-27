@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?><!--招工单详情页-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/new_job_order_text"
+                android:layout_width="wrap_content"
+                android:drawableRight="@color/white"
+                android:paddingRight="25px"
+                android:text="招工单号 :" />
+
+            <TextView
+                android:id="@+id/jo_detail_noid"
+                style="@style/new_job_order_text"
+                android:layout_width="wrap_content"
+                android:drawableRight="@color/white"
+                android:paddingLeft="0dp"
+                android:text="" />
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="30px"
+            android:paddingLeft="22px"
+            android:paddingRight="10px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="工作现场照片" />
+
+                <TextView
+                    android:id="@+id/jo_detail_imgs_text"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="未上传"
+                    android:textColor="#999999"
+                    android:textSize="24px"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <com.toocms.freeman.ui.view.MyGridView
+                android:id="@+id/jo_detail_imgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="10px"
+                android:numColumns="4"
+                android:verticalSpacing="30px" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/jo_detail_skill_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="工作" />
+
+                <TextView
+                    android:id="@+id/jo_detail_skill"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:maxWidth="260px"
+                    android:paddingLeft="0dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="招工人数" />
+
+                <TextView
+                    android:id="@+id/jo_detail_person"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="合同开始日期" />
+
+                <TextView
+                    android:id="@+id/jo_detail_start_date"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="合同截止日期" />
+
+                <TextView
+                    android:id="@+id/jo_detail_end_date"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="每天工作开始时间" />
+
+                <TextView
+                    android:id="@+id/jo_detail_start_time"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="每天工作截止时间" />
+
+                <TextView
+                    android:id="@+id/jo_detail_end_time"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:id="@+id/jo_detail_week_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="工作时间周历" />
+
+                <TextView
+                    android:id="@+id/jo_detail_week"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:maxWidth="260px"
+                    android:paddingLeft="0dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="招工截止时间" />
+
+                <TextView
+                    android:id="@+id/jo_detail_re_time"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="单价" />
+
+                <TextView
+                    android:id="@+id/jo_detail_price"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="金额" />
+
+                <TextView
+                    android:id="@+id/jo_detail_total"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="结算方式" />
+
+                <TextView
+                    android:id="@+id/jo_detail_payment"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="工作地点" />
+
+                <TextView
+                    android:id="@+id/jo_detail_address"
+                    style="@style/new_job_order_text"
+                    android:layout_width="260px"
+                    android:drawableRight="@color/white"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingLeft="0dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="是否资方提供工作期间的保险" />
+
+                <TextView
+                    android:id="@+id/jo_detail_insurance"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="是" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="是否资方提供工作期间的工作餐" />
+
+                <TextView
+                    android:id="@+id/jo_detail_lunch"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="否" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="是否资方提供工作期间的住宿" />
+
+                <TextView
+                    android:id="@+id/jo_detail_live"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="否" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="是否资方提供工作期间的劳动工具" />
+
+                <TextView
+                    android:id="@+id/jo_detail_utils"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="否" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="是否资方承担因工作产生的交通费" />
+
+                <TextView
+                    android:id="@+id/jo_detail_transportation"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="否" />
+            </LinearLayout>
+
+            <View style="@style/divid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:layout_weight="1"
+                    android:drawableRight="@color/white"
+                    android:paddingRight="25px"
+                    android:text="是否资方承担因工作产生的通讯费" />
+
+                <TextView
+                    android:id="@+id/jo_detail_communications"
+                    style="@style/new_job_order_text"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@color/white"
+                    android:paddingLeft="0dp"
+                    android:text="否" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:paddingBottom="12px"
+            android:paddingLeft="30px"
+            android:paddingTop="20px"
+            android:text="工作完成标准"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="20px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:id="@+id/jo_detail_standard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_bg"
+                android:paddingBottom="20px"
+                android:paddingLeft="15px"
+                android:paddingTop="26px"
+                android:text="请详细描述您的工作完成标准"
+                android:textColor="#656565"
+                android:textSize="26px" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:paddingBottom="12px"
+            android:paddingLeft="30px"
+            android:paddingTop="20px"
+            android:text="备注"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="20px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:id="@+id/jo_detail_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_bg"
+                android:paddingBottom="20px"
+                android:paddingLeft="15px"
+                android:paddingTop="26px"
+                android:text="请详细描述您需要备注的内容"
+                android:textColor="#656565"
+                android:textSize="26px" />
+        </LinearLayout>
+
+        <View
+            style="@style/divider"
+            android:layout_marginTop="60px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View style="@style/weight" />
+
+            <RelativeLayout
+                android:layout_width="180px"
+                android:layout_height="65px">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/jo_detail_btn1"
+                        style="@style/btn_save_style"
+                        android:layout_marginRight="20px"
+                        android:text="查看反馈" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/list_feedback_spot"
+                    android:layout_width="15px"
+                    android:layout_height="15px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="35px"
+                    android:layout_marginTop="11px"
+                    android:background="@drawable/index_message_bg"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/jo_detail_btn2"
+                android:layout_width="160px"
+                android:layout_height="65px"
+                android:layout_marginRight="20px"
+                android:background="@drawable/btn_save"
+                android:gravity="center"
+                android:text="修改"
+                android:textColor="#467cd4"
+                android:textSize="32px" />
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/jo_detail_fbtn"
+                style="@style/fbtn_release_style" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?><!--投诉-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/new_job_order_text"
+                    android:drawableRight="@color/white"
+                    android:text="选择填写您不同意结算的原因" />
+
+                <View style="@style/divider" />
+
+                <com.toocms.freeman.ui.view.MyGridView
+                    android:id="@+id/complaint_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:numColumns="auto_fit"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_marginTop="30px"
+                    android:background="@drawable/text_bg"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="230px"
+                        android:background="@null"
+                        android:gravity="left|top"
+                        android:hint="请描述您不同意结算的原因"
+                        android:paddingLeft="18px"
+                        android:paddingRight="18px"
+                        android:paddingTop="20px"
+                        android:textColor="#656565"
+                        android:textSize="28px" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/new_jo_img_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="30px"
+                android:paddingLeft="22px"
+                android:paddingRight="10px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20px"
+                    android:paddingTop="22px"
+                    android:text="上传图片"
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+
+                <com.toocms.freeman.ui.view.MyGridView
+                    android:id="@+id/complaint_imgs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10px"
+                    android:numColumns="4"
+                    android:verticalSpacing="30px" />
+            </LinearLayout>
+
+
+            <View style="@style/divider" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:padding="20px">
+
+        <cn.zero.android.common.view.FButton
+            android:id="@+id/FButton2"
+            style="@style/fbtn_release_style"
+            android:layout_width="match_parent"
+            android:layout_height="75px"
+            android:layout_margin="20px"
+            android:text="提交" />
+
+    </LinearLayout>
+</LinearLayout>

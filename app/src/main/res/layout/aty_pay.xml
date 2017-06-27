@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pay_wx"
+            style="@style/new_job_order_text"
+            android:layout_height="92px"
+            android:drawableLeft="@drawable/icon_wet"
+            android:drawablePadding="20px"
+            android:drawableRight="@drawable/btn_select"
+            android:gravity="center_vertical"
+            android:text="微信支付" />
+
+        <View style="@style/divid" />
+        <TextView
+            android:id="@+id/pay_ali"
+            style="@style/new_job_order_text"
+            android:layout_height="92px"
+            android:drawableLeft="@drawable/icon_pay"
+            android:drawablePadding="20px"
+            android:drawableRight="@drawable/btn_unselect"
+            android:gravity="center_vertical"
+            android:text="支付宝支付" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/weight"
+        android:background="#f5f5f5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:text="支付:"
+            android:textColor="#282828"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/pay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥30.00"
+            android:textColor="@color/clr_main"
+            android:textSize="30px" />
+
+        <View style="@style/weight" />
+
+        <cn.zero.android.common.view.FButton
+            android:id="@+id/pay_btn"
+            android:layout_width="210px"
+            android:layout_height="match_parent"
+            android:text="付款"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            app:buttonColor="@color/clr_main"
+            app:shadowEnabled="false" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView
+        android:id="@+id/sel_bank_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:swipe_mode="disabled" />
+
+    <cn.zero.android.common.view.textview.DrawableTopCenterTextView
+        android:id="@+id/sel_bank_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330px"
+        android:drawablePadding="40px"
+        android:drawableTop="@drawable/icon_bankcard"
+        android:gravity="center"
+        android:text="暂无银行卡"
+        android:textColor="#808080"
+        android:textSize="28px"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/sel_wx_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="暂无相关数据"
+        android:textColor="#323232"
+        android:textSize="34px"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical"
+    tools:context=".ui.searchjob.RecruitmentQueryResultAty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/select_under_line"
+                android:gravity="center"
+                android:paddingBottom="20px"
+                android:paddingTop="20px"
+                android:text="信用等级"
+                android:textColor="@color/clr_main"
+                android:textSize="28px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="30px"
+                android:background="#999999" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/select_under_line"
+                android:gravity="center"
+                android:paddingBottom="20px"
+                android:paddingTop="20px"
+                android:text="距离最近"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="30px"
+                android:background="#999999" />
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/select_under_line"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="16px"
+                    android:drawableRight="@drawable/btn_level"
+                    android:gravity="center"
+                    android:paddingBottom="20px"
+                    android:paddingTop="20px"
+                    android:text="价格"
+                    android:textColor="#323232"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="30px"
+                android:background="#999999" />
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/select_under_line"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="16px"
+                    android:drawableRight="@drawable/btn_level"
+                    android:gravity="center"
+                    android:paddingBottom="20px"
+                    android:paddingTop="20px"
+                    android:text="工作日期"
+                    android:textColor="#323232"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/take_title_view"
+            android:layout_width="188px"
+            android:layout_height="5px"
+            android:layout_gravity="bottom"
+            android:background="@color/clr_main" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView
+            android:id="@+id/query_result_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:swipe_mode="both" />
+
+        <TextView
+            android:id="@+id/null_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="暂无相关数据"
+            android:textColor="#323232"
+            android:textSize="34px"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

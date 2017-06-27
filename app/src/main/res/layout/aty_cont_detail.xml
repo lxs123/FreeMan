@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?><!--合同详情-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--解除合同理由-->
+        <LinearLayout
+            android:id="@+id/c_detail_remove_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20px"
+                android:paddingLeft="25px"
+                android:paddingTop="20px"
+                android:text="解除合同理由"
+                android:textColor="#323232"
+                android:textSize="28px" />
+
+            <View style="@style/divider" />
+
+            <TextView
+                android:id="@+id/c_detail_remove_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25px"
+                android:background="@drawable/text_bg"
+                android:padding="25px"
+                android:text="·完成质量有影响 ·态度恶略\n请用保鲜膜包好，请用保鲜膜包好"
+                android:textColor="@color/clr_default_sub_text"
+                android:textSize="26px" />
+
+        </LinearLayout>
+        <!--纠纷内容-->
+        <LinearLayout
+            android:id="@+id/c_detail_dispute_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/new_job_order_text_no_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="纠纷内容" />
+
+            <View style="@style/divider" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/new_job_order_text_no_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0px"
+                android:text="投诉内容"
+                android:textColor="@color/clr_default_sub_text" />
+
+            <TextView
+                android:id="@+id/c_detail_complain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25px"
+                android:background="@drawable/text_bg"
+                android:paddingBottom="20px"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:paddingTop="20px"
+                android:text="·完成质量有影响 ·态度恶略\n请用保鲜膜包好，请用保鲜膜包好"
+                android:textColor="@color/clr_default_sub_text"
+                android:textSize="26px" />
+
+            <View style="@style/divider" />
+
+            <TextView
+                style="@style/new_job_order_text_no_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0px"
+                android:paddingTop="10px"
+                android:text="调解方案"
+                android:textColor="@color/clr_default_sub_text" />
+
+            <TextView
+                android:id="@+id/c_detail_mediate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25px"
+                android:background="@drawable/text_bg"
+                android:paddingBottom="20px"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:paddingTop="20px"
+                android:text="·完成质量有影响 ·态度恶略\n请用保鲜膜包好，请用保鲜膜包好"
+                android:textColor="@color/clr_default_sub_text"
+                android:textSize="26px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_job_order_text_no_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="纠纷调解金额：" />
+
+                <TextView
+                    android:id="@+id/c_detail_dispute_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥560.00"
+                    android:textColor="#fb4a4a"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <View style="@style/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/c_detail_dispute_person"
+                    style="@style/new_job_order_text_no_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="0px"
+                    android:text="劳方" />
+
+                <TextView
+                    style="@style/new_job_order_text_no_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="0px"
+                    android:text="是否同意了该方案？" />
+
+                <TextView
+                    android:id="@+id/c_detail_dispute_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="30px"
+                    android:text="等待中"
+                    android:textColor="#fb4a4a"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25px"
+                    android:text="合同编号:"
+                    android:textColor="@color/clr_default_text"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/cont_det_noid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1235054621"
+                    android:textColor="#999999"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <View style="@style/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <cn.zero.android.common.view.shapeimageview.CircularImageView
+                        android:id="@+id/c_detail_cap_head"
+                        android:layout_width="120px"
+                        android:layout_height="120px"
+                        android:layout_marginBottom="20px"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginRight="20px"
+                        android:layout_marginTop="15px"
+                        android:src="@drawable/icon_head" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20px">
+
+                        <TextView
+                            style="@style/listitem_text"
+                            android:text="昵称：" />
+
+                        <TextView
+                            android:id="@+id/cont_det_cap_nickname"
+                            style="@style/listitem_text"
+                            android:drawablePadding="15px"
+                            android:drawableRight="@drawable/icon_capital"
+                            android:paddingLeft="21px"
+                            android:text="jingle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20px">
+
+                        <TextView
+                            style="@style/listitem_text"
+                            android:text="电话：" />
+
+                        <TextView
+                            android:id="@+id/c_detail_cap_phone"
+                            style="@style/listitem_text"
+                            android:drawablePadding="15px"
+                            android:drawableRight="@drawable/btn_phone"
+                            android:paddingBottom="0px"
+                            android:paddingLeft="21px"
+                            android:paddingRight="30px"
+                            android:text="135****1568" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View style="@style/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <cn.zero.android.common.view.shapeimageview.CircularImageView
+                        android:id="@+id/c_detail_lab_head"
+                        android:layout_width="120px"
+                        android:layout_height="120px"
+                        android:layout_marginBottom="20px"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginRight="20px"
+                        android:layout_marginTop="15px"
+                        android:src="@drawable/icon_head" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20px">
+
+                        <TextView
+                            style="@style/listitem_text"
+                            android:text="昵称：" />
+
+                        <TextView
+                            android:id="@+id/c_detail_lab_nickname"
+                            style="@style/listitem_text"
+                            android:drawablePadding="15px"
+                            android:drawableRight="@drawable/icon_labor"
+                            android:paddingLeft="21px"
+                            android:text="jingle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20px">
+
+                        <TextView
+                            style="@style/listitem_text"
+                            android:text="电话：" />
+
+                        <TextView
+                            android:id="@+id/list_cont_lab_phone"
+                            style="@style/listitem_text"
+                            android:drawablePadding="15px"
+                            android:drawableRight="@drawable/btn_phone"
+                            android:paddingBottom="0px"
+                            android:paddingLeft="21px"
+                            android:paddingRight="30px"
+                            android:text="135****1568" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View style="@style/divider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25px"
+                android:text="合同状态:"
+                android:textColor="@color/clr_default_text"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/c_detail_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="带生效"
+                android:textColor="#99ff0000"
+                android:textSize="30px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c_detail_settlement_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25px"
+                    android:text="结算金额:"
+                    android:textColor="@color/clr_default_text"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/c_detail_settlement_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#99ff0000"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/c_detail_tuibu_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25px"
+                    android:paddingRight="25px"
+                    android:paddingTop="10px"
+                    android:paddingBottom="25px"
+                    android:text="退补款金额:"
+                    android:textColor="@color/clr_default_text"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/c_detail_tuibu_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10px"
+                    android:paddingBottom="25px"
+                    android:textColor="#99ff0000"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/new_jo_img_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="30px"
+            android:paddingLeft="22px"
+            android:paddingRight="10px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="20px"
+                    android:paddingTop="22px"
+                    android:text="原工作现场图片"
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/c_detail_old_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30px"
+                    android:paddingBottom="20px"
+                    android:paddingTop="22px"
+                    android:text="未上传"
+                    android:textColor="#999999"
+                    android:textSize="26px"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <com.toocms.freeman.ui.view.MyGridView
+                android:id="@+id/c_detail_old_imgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="10px"
+                android:numColumns="4"
+                android:verticalSpacing="30px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c_detail_now_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="30px"
+            android:paddingLeft="22px"
+            android:paddingRight="10px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="20px"
+                    android:paddingTop="22px"
+                    android:text="现工作现场图片"
+                    android:textColor="#323232"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/c_detail_new_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30px"
+                    android:paddingBottom="20px"
+                    android:paddingTop="22px"
+                    android:text="未上传"
+                    android:textColor="#999999"
+                    android:textSize="26px"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <com.toocms.freeman.ui.view.MyGridView
+                android:id="@+id/c_detail_now_imgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="10px"
+                android:numColumns="4"
+                android:verticalSpacing="30px" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/c_content"
+            layout="@layout/fgt_old_contract" />
+    </LinearLayout>
+</ScrollView>
